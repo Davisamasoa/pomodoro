@@ -1,77 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script defer src="./scripts.js"></script>
+		<title>Document</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./scripts.js"></script>
-  <title>Document</title>
-</head>
+	<body>
+		<header class="navbar">
+			<ul>
+				<li>
+					<button class="btnAlarmeNavbar">
+						<img src="./assets/icons/alarmeIcon.png" alt="relogioIcon" />
+					</button>
+				</li>
+				<li>
+					<button class="btnCronometroNavbar">
+						<img src="./assets/icons/cronometroIcon.png" alt="alarmeIcon" />
+					</button>
+				</li>
+				<li>
+					<button class="btnTimerNavbar">
+						<img src="./assets/icons/timerIcon.png" alt="cronometroIcon" />
+					</button>
+				</li>
+				<li>
+					<button class="btnGloboNavbar">
+						<img src="./assets/icons/relogioIcon.png" alt="timerIcon" />
+					</button>
+				</li>
+			</ul>
+		</header>
 
-<body>
+		<section class="alarme-content">
+			<div class="plusSign">
+				<button><img src="./assets/icons/plus.png" alt="" /></button>
+			</div>
+			<article>
+				<div class="timeDay">
+					<span>08:00</span>
+					<p>Todos os dias</p>
+				</div>
+				<label class="switch">
+					<input type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+			</article>
+		</section>
 
-  <header class="navbar">
-    <ul>
-      <li>
-        <button class="btnAlarmeNavbar">
-          <img src="./assets/icons/alarmeIcon.png" alt="relogioIcon">
-        </button>
-      </li>
-      <li>
-        <button class="btnCronometroNavbar">
-          <img src="./assets/icons/cronometroIcon.png" alt="alarmeIcon">
-        </button>
-      </li>
-      <li>
-        <button class="btnTimerNavbar">
-          <img src="./assets/icons/timerIcon.png" alt="cronometroIcon">
-        </button>
-      </li>
-      <li>
-        <button class="btnGloboNavbar">
-          <img src="./assets/icons/relogioIcon.png" alt="timerIcon">
-        </button>
-      </li>
-    </ul>
-  </header>
+		<section style="display: none" class="cronometro-content">
+			<h1>00:00</h1>
 
-  <section class="alarme-content">
-    <div class="plusSign">
-      <button><img src="./assets/icons/plus.png" alt=""></button>
-    </div>
-    <article>
-      <div class="timeDay">
-        <span>08:00</span>
-        <p>Todos os dias</p>
-      </div>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    </article>    
-  </section>
-  
-  
-  
-  <section style="display: none;" class="cronometro-content">
-    <h1>00:00</h1>
-    
-    <div class="buttonCron">
-      <button class="flagQuit" style="display: none;"><img  src="./assets/icons/flag.png" alt=""></button>
-      <button class="square" style="display: none"><img  src="./assets/icons/square.png" alt=""></button>
-      <button class="play"><img class="playImg" src="./assets/icons/play-button-arrowhead.png" alt=""></button>
-      <button style="display: none;" class="pause"><img class="playImg" src="./assets/icons/pause.png" alt=""></button>
-    </div>
+			<div class="buttonCron">
+				<button class="flagQuit" style="display: none">
+					<img src="./assets/icons/flag.png" alt="" />
+				</button>
+				<button class="square" style="display: none">
+					<img src="./assets/icons/square.png" alt="" />
+				</button>
+				<button class="play">
+					<img src="./assets/icons/play-button-arrowhead.png" alt="" />
+				</button>
+				<button style="display: none" class="pause">
+					<img class="playImg" src="./assets/icons/pause.png" alt="" />
+				</button>
+			</div>
+		</section>
 
-
-  </section>
-
-  <footer>
-
-  </footer>
-
-</body>
-
+		<footer></footer>
+	</body>
 </html>
