@@ -38,12 +38,34 @@
   </header>
 
   <section class="alarme-content">
-    <h1>00:00:00</h1>
+    <div class="plusSign">
+      <button><img src="./assets/icons/plus.png" alt=""></button>
+    </div>
+    <article>
+      <div class="timeDay">
+        <span>08:00</span>
+        <p>Todos os dias</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </article>    
   </section>
+  
+  
+  
   <section style="display: none;" class="cronometro-content">
-    <figure>
-      <img src="./assets/icons/alarmeIcon.png" alt="">
-    </figure>
+    <h1>00:00</h1>
+    
+    <div class="buttonCron">
+      <button class="flagQuit" style="display: none;"><img  src="./assets/icons/flag.png" alt=""></button>
+      <button class="square" style="display: none"><img  src="./assets/icons/square.png" alt=""></button>
+      <button class="play"><img class="playImg" src="./assets/icons/play-button-arrowhead.png" alt=""></button>
+      <button style="display: none;" class="pause"><img class="playImg" src="./assets/icons/pause.png" alt=""></button>
+    </div>
+
+
   </section>
 
   <footer>
