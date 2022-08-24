@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+}
+
+body {
+  background-color: darkgray;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar button {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 40%;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.navbar ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.alarme-content {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarme-content h1 {
+  font-size: 75px;
+}
+
+.cronometro-content {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cronometro-content img {
+  width: 100px;
+}
