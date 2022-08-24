@@ -14,7 +14,10 @@ button {
 }
 
 body {
-	background-color: darkgray;
+	height: 100%;
+	background: rgb(181, 211, 212);
+
+	background-position: center;
 }
 
 /* NAVBAR*/
@@ -30,11 +33,12 @@ body {
 .navbar button {
 	background-color: transparent;
 	cursor: pointer;
-	border-radius: 40%;
+	border-radius: 100%;
 }
 
 .navbar img {
 	width: 50px;
+	border-radius: 100%;
 }
 
 .navbar ul {
@@ -124,7 +128,7 @@ article p {
 }
 
 .buttonCron button {
-	background-color: rgba(19, 18, 18, 0.2);
+	background-color: rgba(117, 115, 115, 0.2);
 	border-radius: 100%;
 	width: 75px;
 	height: 75px;
@@ -174,7 +178,7 @@ article p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: rgb(48, 46, 46);
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
@@ -192,11 +196,11 @@ article p {
 }
 
 input:checked + .slider {
-	background-color: #2196f3;
+	background-color: #28e050;
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #2196f3;
+	box-shadow: 0 0 1px #28e050;
 }
 
 input:checked + .slider:before {
