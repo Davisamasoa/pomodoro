@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles.css" />
-		<script defer src="./scripts.js"></script>
+		<script defer src="./script/alarmController.js"></script>
+		<script defer src="./script/darkMode.js"></script>
 		<title>Alarme</title>
 	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -17,28 +18,28 @@
 			<ul>
 				<li>
 					<button class="btnAlarmeNavbar">
-						<img src="./assets/icons/relogioBRANCO.svg" alt="">
+						<img id="iconClock" src="./assets/icons/relogioBRANCO.svg" alt="">
 					</button>
 				</li>
 				<li>
 					<button class="btnCronometroNavbar">
-						<img src="./assets/icons/cronometroBRANCO.svg" alt="alarmeIcon" />
+						<img id="iconStopWatch"  src="./assets/icons/cronometroBRANCO.svg" alt="alarmeIcon" />
 					</button>
 				</li>
 				<li>
 					<button class="btnTimerNavbar">
-						<img src="./assets/icons/ampulhetaBRANCO.svg" alt="cronometroIcon" />
+						<img id="iconTimer" src="./assets/icons/ampulhetaBRANCO.svg" alt="cronometroIcon" />
 					</button>
 				</li>
 				<li class="globo">
 					<button class="btnGloboNavbar">
-						<img src="./assets/icons/globoBRANCO.svg" alt="timerIcon" />
+						<img id="iconGlobo" src="./assets/icons/globoBRANCO.svg" alt="timerIcon" />
 					</button>
 				</li>
 			</ul>
 
 			<div class="darkToggle">
-				<input type="checkbox" class="checkbox" id="chk" />
+				<input type="checkbox"  class="checkbox" id="chk" />
 				<label class="label" for="chk">
 				  <img class="sun" src="./assets/icons/sun.png" alt="">
 				  <img class="moon" src="./assets/icons/moon.png" alt="">
@@ -49,7 +50,7 @@
 
 		<section class="alarme-content">
 			<div class="plusSign">
-				<button><img src="./assets/icons/maisBRANCO.svg" alt="" /></button>
+				<button><img id="imgPlusSign" src="./assets/icons/maisBRANCO.svg" alt="" /></button>
 			</div>
 			<article>
 				<div class="timeDay">
