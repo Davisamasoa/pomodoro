@@ -6,8 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles.css" />
 		<script defer src="./scripts.js"></script>
-		<title>Document</title>
-	</head>
+		<title>Alarme</title>
+	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
 
 	<body>
 		<header class="navbar">
@@ -27,21 +30,21 @@
 						<img src="./assets/icons/ampulhetaBRANCO.svg" alt="cronometroIcon" />
 					</button>
 				</li>
-				<li>
+				<li class="globo">
 					<button class="btnGloboNavbar">
 						<img src="./assets/icons/globoBRANCO.svg" alt="timerIcon" />
 					</button>
 				</li>
 			</ul>
 
-			<div>
+			<div class="darkToggle">
 				<input type="checkbox" class="checkbox" id="chk" />
 				<label class="label" for="chk">
 				  <img class="sun" src="./assets/icons/sun.png" alt="">
 				  <img class="moon" src="./assets/icons/moon.png" alt="">
 				  <div class="ball"></div>
 				</label>
-			  </div>
+			</div>
 		</header>
 
 		<section class="alarme-content">
