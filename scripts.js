@@ -63,8 +63,9 @@ cronButtonFlagQuit.addEventListener("click", () => {
 cronButtonSquare.addEventListener("click", () => {
 	cronButtonSquare.style.display = "none";
 	h1Cron.textContent = "00:00,00"
-	
-	
+	clearInterval(startCounting);
+	startCounting = setInterval(coutingStopWatch, 10);
+
 	
 	buttonAnimation("buttonAnimation 0.2s ease-in");
 })
@@ -79,26 +80,28 @@ let minutes = 0;
 function coutingStopWatch() {
 	milesium++;
 	
+	
+	if (milesium == 100) {
+		milesium = 00;
+		seconds++;
+	}
+	
 	if (milesium < 10) {
 		milesium = "0" + Number(milesium);
 	} else {
 		milesium = Number(milesium);
 	}
-
-	if (milesium == 100) {
-		milesium = 0;
-		seconds++;
+	
+	
+	if (seconds == 60) {
+		minutes++;
+		seconds = 0;
 	}
 	
 	if (seconds < 10) {
 		seconds = "0" + Number(seconds);
 	} else {
 		seconds = Number(seconds);
-	}
-
-	if (seconds == 60) {
-		minutes++;
-		seconds = 0;
 	}
 
 	if (minutes < 10) {
