@@ -62,24 +62,28 @@ cronButtonFlagQuit.addEventListener("click", () => {
 
 cronButtonSquare.addEventListener("click", () => {
 	cronButtonSquare.style.display = "none";
-	h1Cron.style.animation = "h1-cronometroDown 0.2s linear";
+	cronButtonPlay.style.animation = "none";
+	if (h1Cron.style.marginBottom == "130px") {
+		h1Cron.style.animation = "h1-cronometroDown 0.2s linear";
+	}
+	
 	setTimeout(() => {
 		h1Cron.style.animation = "none";
 	}, 500);
+	
 	h1Cron.style.marginBottom = "0";
 	h1Cron.style.marginTop = "130px";
 	timeFlag.innerHTML = "";
 	timeFlag.style.display = "none";
 	countStopTimes = 0;
 	h1Cron.textContent = "00:00,00"
-	clearInterval(startCounting);
 	milesium = 0;
 	seconds = 0;
 	minutes = 0;
 	startCounting = setInterval(coutingStopWatch, 10);
 	clearInterval(startCounting);
 	buttonAnimation("buttonAnimation 0.2s ease-in");
-})
+});
 
 
 
@@ -123,19 +127,6 @@ function coutingStopWatch() {
 	
 	h1Cron.textContent = `${minutes}:${seconds},${milesium}`;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
