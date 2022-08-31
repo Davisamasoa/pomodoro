@@ -27,12 +27,12 @@ btnCronometro.addEventListener("click", () => {
 });
 
 cronButtonPlay.addEventListener("click", () => {
+	startCounting = setInterval(coutingStopWatch, tempo);
 	cronButtonSquare.style.display = "none";
 	cronButtonFlagQuit.style.display = "block";
 	cronButtonPlay.style.display = "none";
 	cronButtonPause.style.display = "block";
 	buttonAnimation("buttonAnimation 0.2s ease-in");
-	startCounting = setInterval(coutingStopWatch, 10);
 });
 
 cronButtonPause.addEventListener("click", () => {
@@ -79,7 +79,7 @@ cronButtonSquare.addEventListener("click", () => {
 	milesium = 0;
 	seconds = 0;
 	minutes = 0;
-	startCounting = setInterval(coutingStopWatch, 10);
+	startCounting = setInterval(coutingStopWatch, tempo);
 	clearInterval(startCounting);
 	buttonAnimation("buttonAnimation 0.2s ease-in");
 });
@@ -87,6 +87,7 @@ cronButtonSquare.addEventListener("click", () => {
 
 
 //STOPWATCH FUNCTIONS
+let tempo = 10;
 let zero = 0;
 let milesium = 0;
 let seconds = 0;

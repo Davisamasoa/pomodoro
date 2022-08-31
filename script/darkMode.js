@@ -19,8 +19,12 @@ let buttonSquare = document.querySelector(".square img");
 let buttonFlag = document.querySelector(".flagQuit img");
 let buttonsCron = document.querySelectorAll(".buttonCron button");
 
-chk.addEventListener("change", () => {
-    document.body.classList.toggle("dark");
+chk.addEventListener("change", (e) => {
+    if (e.target.checked == true) { 
+        document.body.classList = "dark";
+    } else {
+        document.body.classList = " ";
+}
     changeIcon();
 });
 
