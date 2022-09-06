@@ -8,7 +8,7 @@
 		<script defer src="./script/stopwatch.js"></script>
 		<script defer src="./script/pomodoro.js"></script>
 		<script defer src="./script/darkMode.js"></script>
-		<title>Alarme</title>
+		<title>Pomodoro</title>
 	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -52,6 +52,7 @@
 		<section class="pomodoro-content">
 		
 			<div class="circleOut">
+				<span>Foco!</span>
 				<p class="pomodoroNumber">25:00</p>
 				<div class="pomodoroButton">
 					<button class="pomodoro-play">
@@ -61,7 +62,7 @@
 					<button style="display: none;" class="pomodoro-pause">
 						<img src="./assets/icons/pauseBRANCO.svg" alt="" />
 					</button>
-					<button class="nextTime" style="color: white; font-size: 50px; display: none;" >></button>
+					<button class="nextTime" style="color: white; font-size: 50px; display: none; text-align: center;" >></button>
 				</div>
 				<div class="circleIn"></div>
 			</div>
@@ -97,5 +98,6 @@
 		</section>
 
 		<footer></footer>
+		<audio src="./som-de-alarme.mp3"></audio>
 	</body>
 </html>
