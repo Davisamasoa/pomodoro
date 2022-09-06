@@ -29,12 +29,17 @@ btnStopWatch.addEventListener("click", () => {
 });
 
 cronButtonPlay.addEventListener("click", () => {
+	startCounting = setInterval(coutingStopWatch, tempo);
 	cronButtonSquare.style.display = "none";
 	cronButtonFlagQuit.style.display = "block";
 	cronButtonPlay.style.display = "none";
 	cronButtonPause.style.display = "block";
+<<<<<<< HEAD:script/stopwatch.js
 	buttonAnimation("buttonAnimation 0.3s ease-out");
 	startCounting = setInterval(coutingStopWatch, tempo);
+=======
+	buttonAnimation("buttonAnimation 0.2s ease-in");
+>>>>>>> origin:script/alarmController.js
 });
 
 cronButtonPause.addEventListener("click", () => {
@@ -94,7 +99,11 @@ cronButtonSquare.addEventListener("click", () => {
 
 
 //STOPWATCH FUNCTIONS
+<<<<<<< HEAD:script/stopwatch.js
 
+=======
+let tempo = 10;
+>>>>>>> origin:script/alarmController.js
 let zero = 0;
 let milesium = 0;
 let seconds = 0;
