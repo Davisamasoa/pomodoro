@@ -147,5 +147,5 @@ function buttonAnimation(animation) {
 
 function sectionAnimation() {
 	sectionAlarme.style.animation = "sectionAnimation 0.2s ease-in";
-	sectionCronometro.style.animation = "sectionAnimation 0.2s ease-in";
+	sectionStopWatch.style.animation = "sectionAnimation 0.2s ease-in";
 }
