@@ -24,7 +24,6 @@ btnAlarme.addEventListener("click", () => {
 btnStopWatch.addEventListener("click", () => {
 	sectionAlarme.style.display = "none";
 	sectionStopWatch.style.display = "flex";
-	h1CronDiv.style.animation = "none";
 	sectionAnimation();
 });
 
@@ -34,12 +33,7 @@ cronButtonPlay.addEventListener("click", () => {
 	cronButtonFlagQuit.style.display = "block";
 	cronButtonPlay.style.display = "none";
 	cronButtonPause.style.display = "block";
-<<<<<<< HEAD:script/stopwatch.js
-	buttonAnimation("buttonAnimation 0.3s ease-out");
-	startCounting = setInterval(coutingStopWatch, tempo);
-=======
 	buttonAnimation("buttonAnimation 0.2s ease-in");
->>>>>>> origin:script/alarmController.js
 });
 
 cronButtonPause.addEventListener("click", () => {
@@ -47,7 +41,7 @@ cronButtonPause.addEventListener("click", () => {
 	cronButtonSquare.style.display = "block";
 	cronButtonPause.style.display = "none";
 	cronButtonPlay.style.display = "block";
-	buttonAnimation("buttonAnimation 0.3s ease-out");
+	buttonAnimation("buttonAnimation 0.2s ease-in");
 	clearInterval(startCounting);
 });
 
@@ -99,16 +93,11 @@ cronButtonSquare.addEventListener("click", () => {
 
 
 //STOPWATCH FUNCTIONS
-<<<<<<< HEAD:script/stopwatch.js
-
-=======
 let tempo = 10;
->>>>>>> origin:script/alarmController.js
 let zero = 0;
 let milesium = 0;
 let seconds = 0;
 let minutes = 0;
-let tempo = 10;
 function coutingStopWatch() {
 	milesium++;
 	
@@ -142,7 +131,7 @@ function coutingStopWatch() {
 		minutes = Number(minutes);
 	}
 	
-	h1Cron.textContent = `${minutes}:${seconds}.${milesium}`;
+	h1Cron.textContent = `${minutes}:${seconds},${milesium}`;
   }
 
 
@@ -158,8 +147,5 @@ function buttonAnimation(animation) {
 
 function sectionAnimation() {
 	sectionAlarme.style.animation = "sectionAnimation 0.2s ease-in";
-	sectionStopWatch.style.animation = "sectionAnimation 0.2s ease-in";
+	sectionCronometro.style.animation = "sectionAnimation 0.2s ease-in";
 }
-
-
-

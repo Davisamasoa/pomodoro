@@ -161,6 +161,7 @@ body.dark {
 .circleOut p{
 	position: absolute;
 	font-size: 150px;
+	width: 360px;
 }
 
 .pomodoroButton{

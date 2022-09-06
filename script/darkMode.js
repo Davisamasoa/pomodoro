@@ -7,9 +7,12 @@ let iconTimer= document.querySelector("#iconTimer");
 let iconGlobo = document.querySelector("#iconGlobo");
 let switchToggleDarkMode = document.querySelector(".label");
 
-//ALARM ICONS
-let plusSign = document.querySelector("#imgPlusSign");
-let switchToggleAlarm = document.querySelector(".slider");
+//POMODORO ICONS
+let circle = document.querySelector(".circleIn");
+let buttonPlayPomodoro = document.querySelector(".pomodoro-play");
+let buttonPlayPomodoroImg = document.querySelector(".pomodoro-play img");
+let buttonPausePomodoro = document.querySelector(".pomodoro-pause");
+let buttonPausePomodoroImg = document.querySelector(".pomodoro-pause img");
 
 //STOPWATCH 
 let buttonPlay = document.querySelector(".play img");
@@ -37,8 +40,12 @@ function changeIcon() {
         iconGlobo.src = "./assets/icons/globoPRETO.svg";
         switchToggleDarkMode.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
         
-        //ALARM ICONS
-        
+        //POMODORO ICONS
+        buttonPlayPomodoro.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+        buttonPlayPomodoroImg.src = "./assets/icons/playPRETO.svg";
+        buttonPausePomodoro.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+        buttonPausePomodoroImg.src = "./assets/icons/pausePRETO.svg";
+        circle.style.borderColor = "black";
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playPRETO.svg";
@@ -58,7 +65,11 @@ function changeIcon() {
         switchToggleDarkMode.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         
         //ALARM ICONS
-        
+        buttonPlayPomodoro.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        buttonPlayPomodoroImg.src = "./assets/icons/playBRANCO.svg";
+        buttonPausePomodoro.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        buttonPausePomodoroImg.src = "./assets/icons/pauseBRANCO.svg";
+        circle.style.borderColor = "rgba(255, 255, 255, 1)";
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playBRANCO.svg";
