@@ -34,8 +34,7 @@ function changeIcon() {
         switchToggleDarkMode.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
         
         //ALARM ICONS
-        plusSign.src = "./assets/icons/maisPRETO.svg";
-        switchToggleAlarm.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playPRETO.svg";
@@ -55,8 +54,7 @@ function changeIcon() {
         switchToggleDarkMode.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         
         //ALARM ICONS
-        plusSign.src = "./assets/icons/maisBRANCO.svg";
-        switchToggleAlarm.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playBRANCO.svg";

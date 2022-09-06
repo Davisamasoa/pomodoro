@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles.css" />
-		<script defer src="./script/alarmController.js"></script>
+		<script defer src="./script/stopwatch.js"></script>
+		<script defer src="./script/pomodoro.js"></script>
 		<script defer src="./script/darkMode.js"></script>
 		<title>Alarme</title>
 	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
@@ -22,7 +23,7 @@
 					</button>
 				</li>
 				<li>
-					<button class="btnCronometroNavbar">
+					<button class="btnStopWatchNavbar">
 						<img id="iconStopWatch"  src="./assets/icons/cronometroBRANCO.svg" alt="alarmeIcon" />
 					</button>
 				</li>
@@ -48,24 +49,32 @@
 			</div>
 		</header>
 
-		<section class="alarme-content">
-			<div class="plusSign">
-				<button><img id="imgPlusSign" src="./assets/icons/maisBRANCO.svg" alt="" /></button>
-			</div>
-			<article>
-				<div class="timeDay">
-					<span>08:00</span>
-					<p>Todos os dias</p>
+		<section class="pomodoro-content">
+		
+			<div class="circleOut">
+				<p class="pomodoroNumber">25:00</p>
+				<div class="pomodoroButton">
+					<button class="pomodoro-play">
+						<img src="./assets/icons/playBRANCO.svg" alt="" />
+					</button>
+
+					<button style="display: none;" class="pomodoro-pause">
+						<img src="./assets/icons/pauseBRANCO.svg" alt="" />
+					</button>
+					<button class="nextTime" style="color: white; font-size: 50px; display: none;" >></button>
 				</div>
-				<label class="switch">
-					<input type="checkbox" />
-					<span class="slider round"></span>
-				</label>
-			</article>
+				<div class="circleIn"></div>
+			</div>
+			
+
+
+  
+			  
+
 		</section>
 
-		<section style="display: none" class="cronometro-content">
-			<h1>00:00,00</h1>
+		<section style="display: none" class="stopWatch-content">
+			<div class="h1"><h1>00:00.00</h1></div>
 
 			<div class="timeFlag" style="display: none">
 				
