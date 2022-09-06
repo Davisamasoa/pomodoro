@@ -60,7 +60,7 @@ pomodoroPlayButton.addEventListener("click", () => {
     buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
-    }, 1);
+    }, 1000);
 })
 
 pomodoroPauseButton.addEventListener("click", () => {
@@ -73,7 +73,7 @@ pomodoroPauseButton.addEventListener("click", () => {
 nextTime.addEventListener("click", () => {
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
-    }, 1);
+    }, 1000);
     clearInterval(startPomodoroCounting);
     index++;
     if (index == pomodoroTimes.length) {
@@ -87,7 +87,7 @@ nextTime.addEventListener("click", () => {
     pminute = Math.floor(pseconds / 60);
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
-    }, 1);
+    }, 1000);
     pomodoroPauseButton.style.display = "block";
     nextTime.style.display = "none";
     
