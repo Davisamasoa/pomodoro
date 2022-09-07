@@ -60,7 +60,7 @@ pomodoroPlayButton.addEventListener("click", () => {
     buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
-    }, 1000);
+    }, 10);
 })
 
 pomodoroPauseButton.addEventListener("click", () => {
@@ -98,14 +98,18 @@ nextTime.addEventListener("click", () => {
 function pomodoroCounting() {
     if (pomodoroNumber.textContent == "00:01") {
         
-        clearInterval(startPomodoroCounting);
         pomodoroNumber.textContent = "00:00";
+        clearInterval(startPomodoroCounting);
         description.textContent = "Ciclo finalizado!"
         nextTime.style.display = "block";
         pomodoroPauseButton.style.display = "none";
         buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
         audio.play();
-        alert("O tempo acabou!");
+        
+        setTimeout(() => {
+            alert("O tempo acabou!");
+            
+        }, 10);
     }
     
     pseconds--;
@@ -115,7 +119,7 @@ function pomodoroCounting() {
         pseconds = "0" + pseconds;
     }
 
-    if (parseInt(pminute) != 0 & parseInt(pseconds) == 0 ) {
+    if (parseInt(pminute) != 00 & parseInt(pseconds) == 00 ) {
         pminute = parseInt(pminute) - 1;
         pseconds = 59;
     }
