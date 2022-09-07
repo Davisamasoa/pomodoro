@@ -60,7 +60,7 @@ pomodoroPlayButton.addEventListener("click", () => {
     buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
-    }, 10);
+    }, 1000);
 })
 
 pomodoroPauseButton.addEventListener("click", () => {
