@@ -13,6 +13,8 @@ let buttonPlayPomodoro = document.querySelector(".pomodoro-play");
 let buttonPlayPomodoroImg = document.querySelector(".pomodoro-play img");
 let buttonPausePomodoro = document.querySelector(".pomodoro-pause");
 let buttonPausePomodoroImg = document.querySelector(".pomodoro-pause img");
+let buttonNextTime = document.querySelector(".nextTime img");
+let circleAnimation = document.querySelector(".circleAnimation");
 
 //STOPWATCH 
 let buttonPlay = document.querySelector(".play img");
@@ -21,6 +23,7 @@ let buttonFlagQuit = document.querySelector(".flagQuit img");
 let buttonSquare = document.querySelector(".square img");
 let buttonFlag = document.querySelector(".flagQuit img");
 let buttonsCron = document.querySelectorAll(".buttonCron button");
+let buttonsPomo = document.querySelectorAll(".pomodoro-content button");
 
 chk.addEventListener("change", (e) => {
     if (e.target.checked == true) { 
@@ -46,6 +49,8 @@ function changeIcon() {
         buttonPausePomodoro.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
         buttonPausePomodoroImg.src = "./assets/icons/pausePRETO.svg";
         circle.style.borderColor = "black";
+        circleAnimation.style.borderColor = "black";
+        buttonNextTime.src = "./assets/icons/nextPRETO.png";
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playPRETO.svg";
@@ -55,6 +60,7 @@ function changeIcon() {
        
         for (let i = 0; i < buttonsCron.length; i++){
             buttonsCron[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+            buttonsPomo[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
         }
     } else {
         //NAV ICONS
@@ -64,12 +70,14 @@ function changeIcon() {
         iconGlobo.src = "./assets/icons/globoBRANCO.svg";
         switchToggleDarkMode.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         
-        //ALARM ICONS
+        //POMODORO ICONS
         buttonPlayPomodoro.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         buttonPlayPomodoroImg.src = "./assets/icons/playBRANCO.svg";
         buttonPausePomodoro.style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         buttonPausePomodoroImg.src = "./assets/icons/pauseBRANCO.svg";
         circle.style.borderColor = "rgba(255, 255, 255, 1)";
+        circleAnimation.style.borderColor = "rgba(255, 255, 255, 1)";
+        buttonNextTime.src = "./assets/icons/nextBRANCO.png";
 
         //STOPWATCH ICONS
         buttonPlay.src = "./assets/icons/playBRANCO.svg";
@@ -78,6 +86,7 @@ function changeIcon() {
         buttonSquare.src = "./assets/icons/quadradoBRANCO.svg";
         for (let i = 0; i < buttonsCron.length; i++){
             buttonsCron[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+            buttonsPomo[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         }
     }
 }

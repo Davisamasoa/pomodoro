@@ -30,17 +30,17 @@ btnStopWatch.addEventListener("click", () => {
 cronButtonPlay.addEventListener("click", () => {
 	startCounting = setInterval(coutingStopWatch, tempo);
 	cronButtonSquare.style.display = "none";
-	cronButtonFlagQuit.style.display = "block";
+	cronButtonFlagQuit.style.display = "flex";
 	cronButtonPlay.style.display = "none";
-	cronButtonPause.style.display = "block";
+	cronButtonPause.style.display = "flex";
 	buttonAnimation("buttonAnimation 0.2s ease-in");
 });
 
 cronButtonPause.addEventListener("click", () => {
 	cronButtonFlagQuit.style.display = "none";
-	cronButtonSquare.style.display = "block";
+	cronButtonSquare.style.display = "flex";
 	cronButtonPause.style.display = "none";
-	cronButtonPlay.style.display = "block";
+	cronButtonPlay.style.display = "flex";
 	buttonAnimation("buttonAnimation 0.2s ease-in");
 	clearInterval(startCounting);
 });

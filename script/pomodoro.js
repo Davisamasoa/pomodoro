@@ -6,6 +6,8 @@ let pomodoroPauseIcon = document.querySelector(".pomodoro-pause img");
 let nextTime = document.querySelector(".nextTime");
 let audio = document.querySelector("audio");
 let description = document.querySelector(".circleOut span")
+let circleAnimate = document.querySelector(".circleAnimation");
+let animation = "circleAnimation 1.3s linear infinite";
 
 let startPomodoroCounting;
 pomodoroTimes = [
@@ -58,8 +60,10 @@ pomodoroPlayButton.addEventListener("click", () => {
     pomodoroPlayButton.style.display = "none";
     pomodoroPauseButton.style.display = "block";
     buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
+    pomodoroCounting();
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
+        circleAnimate.style.animation = animation;
     }, 1000);
 })
 
@@ -68,25 +72,27 @@ pomodoroPauseButton.addEventListener("click", () => {
     pomodoroPlayButton.style.display = "block";
     buttonAnimationPomodoro("buttonAnimation 0.3s ease-out");
     clearInterval(startPomodoroCounting);
+    circleAnimate.style.animation = "none";
 })
 
 nextTime.addEventListener("click", () => {
-    startPomodoroCounting = setInterval(() => {
-        pomodoroCounting();
-    }, 1000);
+    newTimeAnimation();
+    
     clearInterval(startPomodoroCounting);
+    circleAnimate.style.animation = "none";
     index++;
     if (index == pomodoroTimes.length) {
         index = 0;
     }
 
-    console.log(index);
     pseconds = parseInt(pomodoroTimes[index].time);
     description.textContent = pomodoroTimes[index].description;
 
     pminute = Math.floor(pseconds / 60);
+    pomodoroCounting();
     startPomodoroCounting = setInterval(() => {
         pomodoroCounting();
+        circleAnimate.style.animation = animation;
     }, 1000);
     pomodoroPauseButton.style.display = "block";
     nextTime.style.display = "none";
@@ -99,6 +105,7 @@ function pomodoroCounting() {
     if (pomodoroNumber.textContent == "00:01") {
         
         pomodoroNumber.textContent = "00:00";
+
         clearInterval(startPomodoroCounting);
         description.textContent = "Ciclo finalizado!"
         nextTime.style.display = "block";
@@ -108,8 +115,9 @@ function pomodoroCounting() {
         
         setTimeout(() => {
             alert("O tempo acabou!");
+            circleAnimate.style.animation = "none";
             
-        }, 10);
+        }, 15);
     }
     
     pseconds--;
@@ -134,10 +142,14 @@ function pomodoroCounting() {
 }
   
   
-  
-  
 function buttonAnimationPomodoro(animation) {
 	pomodoroPlayButton.style.animation = animation;
     pomodoroPauseButton.style.animation = animation;
     nextTime.style.animation = animation;
 }
+
+function newTimeAnimation() {
+    pomodoroNumber.style.animation = "sectionAnimation 0.2s ease-in";
+    description.style.animation = "sectionAnimation 0.2s ease-in";
+}
+
