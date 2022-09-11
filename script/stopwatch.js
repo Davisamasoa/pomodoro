@@ -18,6 +18,9 @@ let startCounting;
 btnAlarme.addEventListener("click", () => {
 	sectionAlarme.style.display = "flex";
 	sectionStopWatch.style.display = "none";
+	setTimeout(() => {
+		h1CronDiv.style.animation = "none"	
+	}, 500)
 	sectionAnimation();
 });
 
@@ -49,10 +52,6 @@ let countStopTimes = 0;
 
 cronButtonFlagQuit.addEventListener("click", () => {
 	h1CronDiv.style.animation = "h1-stopWatchUp 0.3s linear";
-	setTimeout(() => {
-		h1CronDiv.style.animation = "none"	
-	}, 500)
-	
 	h1CronDiv.style.marginBottom = "130px";
 	h1CronDiv.style.marginTop = "0";
 	let stopTimes = document.createElement("p");
@@ -83,7 +82,7 @@ cronButtonSquare.addEventListener("click", () => {
 	timeFlag.innerHTML = "";
 	timeFlag.style.display = "none";
 	countStopTimes = 0;
-	h1Cron.textContent = "00:00,00"
+	h1Cron.textContent = "00:00.00"
 	milesium = 0;
 	seconds = 0;
 	minutes = 0;
@@ -133,7 +132,7 @@ function coutingStopWatch() {
 		minutes = Number(minutes);
 	}
 	
-	h1Cron.textContent = `${minutes}:${seconds},${milesium}`;
+	h1Cron.textContent = `${minutes}:${seconds}.${milesium}`;
   }
 
 

@@ -111,7 +111,9 @@ body.dark {
 .navbar img {
 	width: 50px;
 	border-radius: 100%;
+	transition: 0.3s;
 }
+
 
 .navbar ul {
 	width: 660px;
@@ -182,7 +184,7 @@ body.dark {
 	position: absolute;
 	font-size: 150px;
 	width: 450px;
-	text-align: center;
+	left: 126px;
 	
 }
 
@@ -270,6 +272,7 @@ body.dark {
 	font-size: 150px;
 	font-weight: 200;
 	width: 670px;
+	margin-left: 50px;
 }
 
 .stopWatch-content button img {
@@ -414,4 +417,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+
+@media (min-width: 700px){
+	.navbar img:hover{
+		width: 60px; 
+	}
 }
