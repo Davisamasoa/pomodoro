@@ -9,13 +9,13 @@ let inputsTimer = document.querySelectorAll(".timer-content input");
 console.log(inputsTimer)
 
 playTimerButton.addEventListener("click", () => {
-
     buttonAnimation();
     if (timerHours.value == 0 & timerMinutes.value == 0 & timerSeconds.value == 0) {
         alert("Impossível iniciar o timer com o valor inserido!")
     } else {
         playTimerButton.style.display = "none";
         pauseTimerButton.style.display = "block";
+        resetTimerButton.style.display = "block"
         timerCounting();
         startTimerCounting = setInterval(() => {
             timerCounting();
@@ -38,6 +38,7 @@ pauseTimerButton.addEventListener("click", () => {
 });
 
 resetTimerButton.addEventListener("click", () => {
+    resetTimerButton.style.display = "none";
     buttonAnimation();
     clearInterval(startTimerCounting);
     timerHours.value = "00";

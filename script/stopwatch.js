@@ -67,7 +67,7 @@ let countStopTimes = 0;
 
 cronButtonFlagQuit.addEventListener("click", () => {
 	h1CronDiv.style.animation = "h1-stopWatchUp 0.3s linear";
-	h1CronDiv.style.marginBottom = "130px";
+	h1CronDiv.style.marginBottom = "8%";
 	h1CronDiv.style.marginTop = "0";
 	let stopTimes = document.createElement("p");
 	countStopTimes++;
@@ -81,7 +81,7 @@ cronButtonFlagQuit.addEventListener("click", () => {
 cronButtonSquare.addEventListener("click", () => {
 	cronButtonSquare.style.display = "none";
 	cronButtonPlay.style.animation = "none";
-	if (h1CronDiv.style.marginBottom == "130px") {
+	if (h1CronDiv.style.marginBottom == "8%") {
 		h1CronDiv.style.animation = "h1-stopWatchDown 0.2s linear";
 		setTimeout(() => {
 			h1CronDiv.style.animation = "none";	
@@ -93,7 +93,7 @@ cronButtonSquare.addEventListener("click", () => {
 	}, 500);
 	
 	h1CronDiv.style.marginBottom = "0";
-	h1CronDiv.style.marginTop = "170px";
+	h1CronDiv.style.marginTop = "10%";
 	timeFlag.innerHTML = "";
 	timeFlag.style.display = "none";
 	countStopTimes = 0;
