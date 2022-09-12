@@ -6,7 +6,7 @@ let pauseTimerButton =  document.querySelector(".pause-timer");
 let resetTimerButton = document.querySelector(".reset-timer");
 let audioTimer = document.querySelector("audio");
 let inputsTimer = document.querySelectorAll(".timer-content input");
-console.log(inputsTimer)
+
 
 playTimerButton.addEventListener("click", () => {
     buttonAnimation();
@@ -29,7 +29,6 @@ playTimerButton.addEventListener("click", () => {
 });
 
 pauseTimerButton.addEventListener("click", () => {
-    console.log("oi")
     pauseTimerButton.style.display = "none";
     playTimerButton.style.display = "block";
     buttonAnimation();

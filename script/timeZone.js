@@ -12,7 +12,7 @@ let hours = date.getHours();
 let minute = date.getMinutes();
 let second = date.getSeconds();
 
-let timeZoneEua = Number(hours) - 3;
+let timeZoneEua = Number(hours) - 1;
 let timeZoneUk = Number(hours) + 4;
 let timeZoneFr = Number(hours) + 5;
 let timeZoneJapan = Number(hours) + 12;
