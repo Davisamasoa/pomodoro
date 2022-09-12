@@ -79,6 +79,10 @@ function changeIcon() {
             timerButtons[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
         }
 
+        for (let i = 0; i < inputTimer.length; i++){
+            inputTimer[i].style.color = "black";
+        }
+
         playTimerbtn.src = "./assets/icons/playPRETO.svg";
         pauseTimerbtn.src = "./assets/icons/pausePRETO.svg";
         resetTimerbtn.src = "./assets/icons/quadradoPRETO.svg";
@@ -116,6 +120,10 @@ function changeIcon() {
          //TIMER
         for (let i = 0; i < timerButtons.length; i++){
             timerButtons[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        }
+
+        for (let i = 0; i < inputTimer.length; i++){
+            inputTimer[i].style.color = "white";
         }
 
         playTimerbtn.src = "./assets/icons/playBRANCO.svg";
