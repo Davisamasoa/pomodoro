@@ -64,6 +64,15 @@ function timerCounting() {
         }, 15);
     }
     
+    if (parseInt(timerMinutes.value) > 59) {
+        timerMinutes.value = 59;
+        console.log("Oi")
+    }
+
+    if (parseInt(timerSeconds.value) > 59) {
+        timerSeconds.value = 60;
+    }
+
     if (parseInt(timerHours.value) != 0 & parseInt(timerMinutes.value) == 0 & parseInt(timerSeconds.value) == 0) {
         timerHours.value--;
         timerMinutes.value = 59;
