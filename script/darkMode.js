@@ -25,6 +25,14 @@ let buttonFlag = document.querySelector(".flagQuit img");
 let buttonsCron = document.querySelectorAll(".buttonCron button");
 let buttonsPomo = document.querySelectorAll(".pomodoro-content button");
 
+//TIMER
+let inputTimer = document.querySelectorAll(".timer-content input");
+let playTimerbtn = document.querySelector(".play-timer img");
+let pauseTimerbtn = document.querySelector(".pause-timer img");
+let resetTimerbtn = document.querySelector(".reset-timer img");
+let timerButtons = document.querySelectorAll(".timer-content button");
+
+
 chk.addEventListener("change", (e) => {
     if (e.target.checked == true) { 
         document.body.classList = "dark";
@@ -60,8 +68,21 @@ function changeIcon() {
        
         for (let i = 0; i < buttonsCron.length; i++){
             buttonsCron[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+        }
+
+        for (let i = 0; i < buttonsPomo.length; i++){
             buttonsPomo[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
         }
+
+        //TIMER
+        for (let i = 0; i < timerButtons.length; i++){
+            timerButtons[i].style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+        }
+
+        playTimerbtn.src = "./assets/icons/playPRETO.svg";
+        pauseTimerbtn.src = "./assets/icons/pausePRETO.svg";
+        resetTimerbtn.src = "./assets/icons/quadradoPRETO.svg";
+
     } else {
         //NAV ICONS
         iconClock.src = "./assets/icons/relogioBRANCO.svg";
@@ -86,7 +107,19 @@ function changeIcon() {
         buttonSquare.src = "./assets/icons/quadradoBRANCO.svg";
         for (let i = 0; i < buttonsCron.length; i++){
             buttonsCron[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        }
+
+        for (let i = 0; i < buttonsPomo.length; i++){
             buttonsPomo[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
         }
+
+         //TIMER
+        for (let i = 0; i < timerButtons.length; i++){
+            timerButtons[i].style.backgroundColor = "rgba(111, 151, 211, 0.3)";
+        }
+
+        playTimerbtn.src = "./assets/icons/playBRANCO.svg";
+        pauseTimerbtn.src = "./assets/icons/pauseBRANCO.svg";
+        resetTimerbtn.src = "./assets/icons/quadradoBRANCO.svg";
     }
 }

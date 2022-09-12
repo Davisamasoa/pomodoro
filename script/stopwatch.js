@@ -1,7 +1,9 @@
 let btnAlarme = document.querySelector(".btnAlarmeNavbar");
 let btnStopWatch = document.querySelector(".btnStopWatchNavbar");
+let btnTimer = document.querySelector(".btnTimerNavbar");
 let sectionAlarme = document.querySelector(".pomodoro-content");
 let sectionStopWatch = document.querySelector(".stopWatch-content");
+let sectionTimer = document.querySelector(".timer-content");
 let h1Cron = document.querySelector(".stopWatch-content h1");
 let h1CronDiv = document.querySelector(".h1");
 let cronButtonPlay = document.querySelector(".play");
@@ -18,6 +20,7 @@ let startCounting;
 btnAlarme.addEventListener("click", () => {
 	sectionAlarme.style.display = "flex";
 	sectionStopWatch.style.display = "none";
+	sectionTimer.style.display = "none";
 	setTimeout(() => {
 		h1CronDiv.style.animation = "none"	
 	}, 500)
@@ -26,9 +29,21 @@ btnAlarme.addEventListener("click", () => {
 
 btnStopWatch.addEventListener("click", () => {
 	sectionAlarme.style.display = "none";
+	sectionTimer.style.display = "none";
 	sectionStopWatch.style.display = "flex";
 	sectionAnimation();
 });
+
+btnTimer.addEventListener("click", () => {
+	sectionAlarme.style.display = "none";
+	sectionStopWatch.style.display = "none";
+	sectionTimer.style.display = "flex";
+	sectionAnimation();
+});
+
+
+
+
 
 cronButtonPlay.addEventListener("click", () => {
 	startCounting = setInterval(coutingStopWatch, tempo);
@@ -149,4 +164,5 @@ function buttonAnimation(animation) {
 function sectionAnimation() {
 	sectionAlarme.style.animation = "sectionAnimation 0.2s ease-in";
 	sectionStopWatch.style.animation = "sectionAnimation 0.2s ease-in";
+	sectionTimer.style.animation = "sectionAnimation 0.2s ease-in";
 }
