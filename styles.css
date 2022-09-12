@@ -163,7 +163,6 @@ body.dark {
 	border-radius: 100%;
 	z-index: 5;
 	transition: 0.5s;
-	/* animation: circleAnimation 1s linear infinite; */
 }
 
 .circleIn {
@@ -359,8 +358,404 @@ body.dark {
 }
 
 
+/*GLOBAL TIME*/
+.world-time{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+
+}
+
+.world-time div{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-left: 150px;
+}
+
+.world-time article{
+	margin-top: 80px;
+	width: 600px;
+}
+
+.world-time article h3{
+	font-size: 50px;
+}
+
+.world-time article p{
+	font-size: 60px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
+/* MEDIA QUERRY */
+
+
+@media (min-width: 700px){
+	.navbar ul img:hover{
+		width: 60px; 
+	}
+}
+
+@media (max-width: 1550px){
+	.world-time div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-left: 150px;
+		}
+		
+		.world-time article{
+			margin-top: 80px;
+			width: 600px;
+		}
+		
+		.world-time article h3{
+			font-size: 40px;
+		}
+		
+		.world-time article p{
+			font-size: 50px;
+		}
+}
+
+
+@media (max-width: 1380px){
+	/* NAVBAR */
+	body{
+		overflow-y: hidden;
+	}
+	
+	.darkToggle {
+		right: 320px;
+	}
+	
+	.navbar ul{
+		width: 500px;
+	}
+	
+	.navbar button{
+		width: 40px;
+	}
+	
+	/* POMODORO */
+	.pomodoro-content{
+		margin-top: 20px;
+		height: 550px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	
+	.circleOut{
+		width: 370px;
+		height: 370px;
+	}
+
+	.pomodoroButton{
+		top: 260px;
+	}
+	
+	section button{
+		width: 60px !important;
+		height: 60px !important;
+	}
+	
+	section button img{
+		width: 30px !important;
+		height: 30px !important;
+	}
+	
+	
+	
+	.circleOut p{
+		font-size: 100px;
+		width: 235px;
+		left: 65px;
+	}
+
+	/* STOPWATCH */ 
+	.h1{
+		margin-top: 8%;
+	}
+
+	.stopWatch-content h1{
+		font-size: 120px;
+		width: 534px;
+		margin-left: 0;
+		
+	}
+
+	.timeFlag p{
+		font-size: 22px;
+	}
+	
+	/* TIMER */
+	.timer-content input{
+		font-size: 120px;
+		width: 170px;
+		margin-bottom: 50px;
+	}
+	
+	.timer-content span{
+		font-size: 120px;
+	}
+
+	/* GLOBAL TIME */
+	.world-time article{
+		margin-top: 80px;
+		width: 500px;
+		margin-left: 0;
+	}
+
+	.world-time article h3{
+		font-size: 30px;
+	}
+	
+	.world-time article p{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 1000px){
+	.timeFlag{
+		top: 50px;
+	}
+	
+	.timeFlag p{
+		font-size: 22px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.darkToggle {
+		right: 395px;
+		top: 87px;
+	}
+	
+	/* GLOBAL TIME*/
+
+	.world-time div{
+		display: grid;
+		grid-template-columns: 1fr 1FR;
+		margin-left: 00px;
+		margin-top: 50px;
+		}
+		
+		.world-time article{
+			margin-top: 40px;
+			width: 300px;
+		}
+		
+		.world-time article h3{
+			font-size: 30px;
+		}
+		
+		.world-time article p{
+			font-size: 30px;
+		}
+	
+	
+	
+}
+
+@media (max-width: 670px){
+	body{
+		overflow-y: unset;
+	}
+	
+	.darkToggle {
+		right: 290px;
+		top: 87px;
+	}
+	
+	.world-time div{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 120px;
+		}
+		
+		.world-time article{
+			margin-top: 0px;
+			margin-bottom: 50px;
+			width: 600px;
+		}
+		
+		.world-time article h3{
+			font-size: 
+			30px;
+		}
+		
+		.world-time article p{
+			font-size: 50px;
+		}
+}
+
+
+@media (max-width: 550px) {
+	/* NAVBAR */
+	body{
+		overflow-y: hidden;
+	}
+	
+	.darkToggle {
+		right: 275px;
+		top: 87px;
+	}
+
+	.navbar ul{
+		width: 310px;
+	}
+	
+	.navbar button{
+		width: 40px;
+	}
+	
+	/* POMODORO */
+	.pomodoro-content{
+		margin-top: 0px;
+		height: 550px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.circleOut{
+		width: 370px;
+		height: 370px;
+	}
+	
+	.pomodoroButton{
+		top: 260px;
+	}
+
+	section button{
+		width: 60px !important;
+		height: 60px !important;
+	}
+	
+	section button img{
+		width: 30px !important;
+		height: 30px !important;
+	}
+
+	
+	
+	.circleOut p{
+		font-size: 80px;
+		width: 235px;
+		left: 90px;
+	}
+
+	/* STOPWATCH */ 
+	.stopWatch-content{
+		margin-top: 40px;
+	}
+
+	.h1{
+		height: 70px;
+	}
+
+	.stopWatch-content h1{
+		font-size: 70px;
+		width: 310px;
+		margin-left: 0;	
+	}
+
+	.timeFlag p{
+		font-size: 22px;
+		margin-left: 100px;
+		width: 100%;
+	}
+
+	.timeFlag{
+		top: 110px;
+		width: 100%;
+	}
+
+	.buttonCron{
+		position: fixed;
+		bottom: 0;
+		height: 70px;
+		top: 650px;
+	}
+	
+	/* TIMER */
+	.timer-content{
+		flex-wrap: nowrap;
+	}
+	
+	.timer-content input{
+		font-size: 70px;
+		width: 90px;
+		margin-bottom: 120px;
+	}
+
+	.timer-content span{
+		font-size: 70px;
+	}
+
+	.world-time div{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 250px;
+		}
+}
+
+@media (max-width: 450px){
+	
+	
+	.pomodoro-content{
+		margin-top: 0px;
+		height: 550px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.circleOut{
+		width: 300px;
+		height: 300px;
+	}
+	
+	.circleOut span{
+		top: 50px;
+	}
+
+	.pomodoroButton{
+		top: 200px;
+	}
+	
+	section button{
+		width: 60px !important;
+		height: 60px !important;
+	}
+
+	section button img{
+		width: 30px !important;
+		height: 30px !important;
+	}
+	
+	
+	
+	.circleOut p{
+		font-size: 70px;
+		width: 235px;
+		left: 65px;
+	}
+
+	.timeFlag p{
+		font-size: 22px;
+		margin-left: 40px;
+		width: 100%;
+	}
+
+	.timeFlag{
+		top: 110px;
+		width: 100%;
+	}
+}
+
+/* ANIMATIONS */
 
 @keyframes sectionAnimation {
 	from {
@@ -405,274 +800,3 @@ body.dark {
 		margin-bottom: 0;
 	}
 }
-
-
-
-
-@media (min-width: 700px){
-	.navbar ul img:hover{
-		width: 60px; 
-	}
-}
-
-@media (max-width: 1380px){
-	/* NAVBAR */
-	body{
-		overflow-y: hidden;
-	}
-
-	.darkToggle {
-		right: 320px;
-	}
-
-	.navbar ul{
-		width: 500px;
-	}
-
-	.navbar button{
-		width: 40px;
-	}
-
-	/* POMODORO */
-	.pomodoro-content{
-		margin-top: 20px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-	}
-	
-	.circleOut{
-		width: 370px;
-		height: 370px;
-	}
-
-	.pomodoroButton{
-		top: 260px;
-	}
-
-	section button{
-		width: 60px !important;
-		height: 60px !important;
-	}
-
-	section button img{
-		width: 30px !important;
-		height: 30px !important;
-	}
-
-
-
-	.circleOut p{
-		font-size: 100px;
-		width: 235px;
-		left: 65px;
-	}
-
-	/* STOPWATCH */ 
-	.h1{
-		margin-top: 8%;
-	}
-
-	.stopWatch-content h1{
-		font-size: 120px;
-		width: 534px;
-		margin-left: 0;
-		
-	}
-
-	.timeFlag p{
-		font-size: 22px;
-	}
-
-	/* TIMER */
-	.timer-content input{
-		font-size: 120px;
-		width: 170px;
-		margin-bottom: 50px;
-	}
-
-	.timer-content span{
-		font-size: 120px;
-	}
-}
-
-@media (max-width: 1000px){
-	.timeFlag{
-		top: 50px;
-	}
-	
-	.timeFlag p{
-		font-size: 22px;
-		margin-left: 0px;
-		width: 100%;
-	}
-
-	.darkToggle {
-		right: 395px;
-		top: 87px;
-	}
-
-
-
-
-}
-
-@media (max-width: 550px) {
-	/* NAVBAR */
-	body{
-		overflow-y: hidden;
-	}
-
-	.darkToggle {
-		right: 275px;
-		top: 87px;
-	}
-
-	.navbar ul{
-		width: 310px;
-	}
-
-	.navbar button{
-		width: 40px;
-	}
-
-	/* POMODORO */
-	.pomodoro-content{
-		margin-top: 0px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.circleOut{
-		width: 370px;
-		height: 370px;
-	}
-
-	.pomodoroButton{
-		top: 260px;
-	}
-
-	section button{
-		width: 60px !important;
-		height: 60px !important;
-	}
-
-	section button img{
-		width: 30px !important;
-		height: 30px !important;
-	}
-
-
-
-	.circleOut p{
-		font-size: 80px;
-		width: 235px;
-		left: 90px;
-	}
-
-	/* STOPWATCH */ 
-	.stopWatch-content{
-		margin-top: 40px;
-	}
-
-	.h1{
-		height: 70px;
-	}
-
-	.stopWatch-content h1{
-		font-size: 70px;
-		width: 310px;
-		margin-left: 0;	
-	}
-
-	.timeFlag p{
-		font-size: 22px;
-		margin-left: 100px;
-		width: 100%;
-	}
-
-	.timeFlag{
-		top: 110px;
-		width: 100%;
-	}
-
-	.buttonCron{
-		position: fixed;
-		bottom: 0;
-		height: 70px;
-		top: 650px;
-	}
-
-	/* TIMER */
-	.timer-content{
-		flex-wrap: nowrap;
-	}
-	
-	.timer-content input{
-		font-size: 70px;
-		width: 90px;
-		margin-bottom: 120px;
-	}
-
-	.timer-content span{
-		font-size: 70px;
-	}
-}
-
-@media (max-width: 450px){
-
-
-	.pomodoro-content{
-		margin-top: 0px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.circleOut{
-		width: 300px;
-		height: 300px;
-	}
-
-	.circleOut span{
-		top: 50px;
-	}
-
-	.pomodoroButton{
-		top: 200px;
-	}
-
-	section button{
-		width: 60px !important;
-		height: 60px !important;
-	}
-
-	section button img{
-		width: 30px !important;
-		height: 30px !important;
-	}
-
-
-
-	.circleOut p{
-		font-size: 70px;
-		width: 235px;
-		left: 65px;
-	}
-
-	.timeFlag p{
-		font-size: 22px;
-		margin-left: 40px;
-		width: 100%;
-	}
-
-	.timeFlag{
-		top: 110px;
-		width: 100%;
-	}
-}
-

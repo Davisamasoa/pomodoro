@@ -9,6 +9,7 @@
 		<script defer src="./script/pomodoro.js"></script>
 		<script defer src="./script/darkMode.js"></script>
 		<script defer src="./script/timer.js"></script>
+		<script defer src="./script/global-time.js"></script>
 		<title>Pomodoro</title>
 	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -50,7 +51,7 @@
 			</div>
 		</header>
 
-		<section class="pomodoro-content">
+		<section style="display: none;" class="pomodoro-content">
 			<div class="circleOut">
 				<div class="circleAnimation"></div>
 				<span>Foco!</span>
@@ -105,7 +106,41 @@
 		</section>
 
 
+		<section class="world-time">
+			<div>
+				<article>
+					<h3>Brasília, Brasil</h3>
+					<p class="brasil"></p>
+				</article>
 
+				<article>
+					<h3>New York, United States</h3>
+					<p class="eua"></p>
+				</article>
+
+				<article>
+					<h3>London, United Kingdom</h3>
+					<p class="uk"></p>
+				</article>
+
+				<article>
+					<h3>Paris, France</h3>
+					<p class="france"></p>
+				</article>
+
+				<article>
+					<h3>Tokyo, Japan</h3>
+					<p class="japan"></p>
+				</article>
+
+				<article>
+					<h3>Beijing, China</h3>
+					<p class="china"></p>
+				</article>
+			</div>
+
+
+		</section>
 
 
 		
