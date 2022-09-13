@@ -18,6 +18,7 @@ let timeZoneFr = Number(hours) + 5;
 let timeZoneJapan = Number(hours) + 12;
 let timeZoneChina = Number(hours) + 11;
 
+console.log(timeZoneEua)
 function formatter (value) {
     if (value < 10) {
         value = "0" + value;
@@ -39,7 +40,6 @@ setInterval(() => {
 
 function time() {
     let date = new Date();
-    let denver = new Intl.DateTimeFormat('en-US', { timeZone: "America/Denver" }); 
     let hours = date.getHours();
     let minute = date.getMinutes();
     let second = date.getSeconds();
@@ -62,13 +62,20 @@ function time() {
 
 
 function horas(value) {
+    if (value == -1){
+        value = 23;
+    }
+    
     if (value > 23) {
         value = value - 24;
 
     }
+    
+
     if (value < 10) {
         value = "0" + value;
     }
+
     
     return value;
 }
