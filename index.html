@@ -11,42 +11,69 @@
 		<script defer src="./script/timer.js"></script>
 		<script defer src="./script/timeZone.js"></script>
 		<title>Pomodoro</title>
-	</head><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-	<link rel="manifest" href="./favicon/site.webmanifest">
+	</head>
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./favicon/apple-touch-icon.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="./favicon/favicon-32x32.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="./favicon/favicon-16x16.png"
+	/>
+	<link rel="manifest" href="./favicon/site.webmanifest" />
 
 	<body>
 		<header class="navbar">
 			<ul>
 				<li>
 					<button class="btnAlarmeNavbar">
-						<img id="iconClock" src="./assets/icons/relogioBRANCO.svg" alt="">
+						<img id="iconClock" src="./assets/icons/relogioBRANCO.svg" alt="" />
 					</button>
 				</li>
 				<li>
 					<button class="btnStopWatchNavbar">
-						<img id="iconStopWatch"  src="./assets/icons/cronometroBRANCO.svg" alt="alarmeIcon" />
+						<img
+							id="iconStopWatch"
+							src="./assets/icons/cronometroBRANCO.svg"
+							alt="alarmeIcon"
+						/>
 					</button>
 				</li>
 				<li>
 					<button class="btnTimerNavbar">
-						<img id="iconTimer" src="./assets/icons/ampulhetaBRANCO.svg" alt="cronometroIcon" />
+						<img
+							id="iconTimer"
+							src="./assets/icons/ampulhetaBRANCO.svg"
+							alt="cronometroIcon"
+						/>
 					</button>
 				</li>
 				<li class="globo">
 					<button class="btnGloboNavbar">
-						<img id="iconGlobo" src="./assets/icons/globoBRANCO.svg" alt="timerIcon" />
+						<img
+							id="iconGlobo"
+							src="./assets/icons/globoBRANCO.svg"
+							alt="timerIcon"
+						/>
 					</button>
 				</li>
 			</ul>
 
 			<div class="darkToggle">
-				<input value="0" type="checkbox"  class="checkbox" id="chk" />
+				<input value="0" type="checkbox" class="checkbox" id="chk" />
 				<label class="label" for="chk">
-				  <img class="sun" src="./assets/icons/sun.png" alt="">
-				  <img class="moon" src="./assets/icons/moon.png" alt="">
-				  <div class="ball"></div>
+					<img class="sun" src="./assets/icons/sun.png" alt="" />
+					<img class="moon" src="./assets/icons/moon.png" alt="" />
+					<div class="ball"></div>
 				</label>
 			</div>
 		</header>
@@ -60,19 +87,20 @@
 					<button class="pomodoro-play">
 						<img src="./assets/icons/playBRANCO.svg" alt="" />
 					</button>
-					<button style="display: none;" class="pomodoro-pause">
+					<button style="display: none" class="pomodoro-pause">
 						<img src="./assets/icons/pauseBRANCO.svg" alt="" />
 					</button>
-					<button class="nextTime"><img src="./assets/icons/nextBRANCO.png" alt=""></button>
+					<button class="nextTime">
+						<img src="./assets/icons/nextBRANCO.png" alt="" />
+					</button>
 				</div>
 				<div class="circleIn"></div>
 			</div>
 		</section>
 
-		<section style="display: none;" class="stopWatch-content">
+		<section style="display: none" class="stopWatch-content">
 			<div class="h1"><h1>00:00.00</h1></div>
-			<div class="timeFlag" style="display: none">				
-			</div>
+			<div class="timeFlag" style="display: none"></div>
 			<div class="buttonCron">
 				<button class="flagQuit" style="display: none">
 					<img src="./assets/icons/bandeiraBRANCO.svg" alt="" />
@@ -89,24 +117,29 @@
 			</div>
 		</section>
 
-		<section style="display: none;" class="timer-content">	
+		<section style="display: none" class="timer-content">
 			<div class="numbers">
-				<input class="hours" type="number" value="00">
+				<input class="hours" type="number" value="00" />
 				<span>:</span>
-				<input class="minutes" type="number" value="00" max="59">
+				<input class="minutes" type="number" value="00" max="59" />
 				<span>:</span>
-				<input class="seconds" type="number" value="00" max="59">
+				<input class="seconds" type="number" value="00" max="59" />
 			</div>
 
 			<div class="timer-buttons">
-				<button style="display: none;" class="reset-timer"><img src="./assets/icons/quadradoBRANCO.svg" alt=""></button>
-				<button style="display: none;" class="pause-timer"><img src="./assets/icons/pauseBRANCO.svg" alt=""></button>
-				<button class="play-timer"><img src="./assets/icons/playBRANCO.svg" alt=""></button>
+				<button style="display: none" class="reset-timer">
+					<img src="./assets/icons/quadradoBRANCO.svg" alt="" />
+				</button>
+				<button style="display: none" class="pause-timer">
+					<img src="./assets/icons/pauseBRANCO.svg" alt="" />
+				</button>
+				<button class="play-timer">
+					<img src="./assets/icons/playBRANCO.svg" alt="" />
+				</button>
 			</div>
 		</section>
 
-
-		<section style="display: none;" class="world-time">
+		<section style="display: none" class="world-time">
 			<div>
 				<article>
 					<h3>Brasília, Brasil</h3>
@@ -138,12 +171,8 @@
 					<p class="china"></p>
 				</article>
 			</div>
-
-
 		</section>
 
-
-		
 		<audio src="./som-de-alarme.mp3"></audio>
 	</body>
 </html>

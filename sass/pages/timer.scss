@@ -1,53 +1,51 @@
 .timer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 
 .timer-content {
+	input {
+		font-size: 150px;
+		background-color: transparent;
+		color: white;
+		border-radius: 20px;
+		width: 250px;
+		text-align: center;
+		margin-bottom: 150px;
+	}
 
-    input {
-        font-size: 150px;
-        background-color: transparent;
-        color: white;
-        border-radius: 20px;
-        width: 250px;
-        text-align: center;
-        margin-bottom: 150px;
-    }
-
-    span {
-        text-align: center;
-        font-size: 150px;
-        margin-right: 5px;
-    }
+	span {
+		text-align: center;
+		font-size: 150px;
+		margin-right: 5px;
+	}
 }
 
 .div-timer {
-    position: relative;
+	position: relative;
 }
 
 .timer-buttons {
-    display: flex;
-    gap: 50px;
-    position: fixed;
-    bottom: 30px;
+	display: flex;
+	gap: 50px;
+	position: fixed;
+	bottom: 30px;
 }
 
 .timer-buttons {
-    button {
-        background-color: rgba(111, 151, 211, 0.3);
-        border-radius: 100%;
-        width: 75px;
-        height: 75px;
-    }
+	button {
+		background-color: rgba(111, 151, 211, 0.3);
+		border-radius: 100%;
+		width: 75px;
+		height: 75px;
+	}
 
-    img {
-        width: 40px;
-        height: 40px;
-    }
+	img {
+		width: 40px;
+		height: 40px;
+	}
 }

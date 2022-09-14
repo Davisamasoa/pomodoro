@@ -1,58 +1,57 @@
 @keyframes circleAnimation {
-    0% {
-        width: 95%;
-        height: 95%;
-        opacity: 1;
-    }
+	0% {
+		width: 95%;
+		height: 95%;
+		opacity: 1;
+	}
 
-
-    100% {
-        width: 102%;
-        height: 102%;
-        opacity: 0;
-    }
+	100% {
+		width: 102%;
+		height: 102%;
+		opacity: 0;
+	}
 }
 
 @keyframes sectionAnimation {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes buttonAnimation {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes h1-stopWatchUp {
-    from {
-        margin-top: 8%;
-        margin-bottom: 0;
-    }
+	from {
+		margin-top: 8%;
+		margin-bottom: 0;
+	}
 
-    to {
-        margin-top: 0;
-        margin-bottom: 8%;
-    }
+	to {
+		margin-top: 0;
+		margin-bottom: 8%;
+	}
 }
 
 @keyframes h1-stopWatchDown {
-    from {
-        margin-top: 0;
-        margin-bottom: 8%;
-    }
+	from {
+		margin-top: 0;
+		margin-bottom: 8%;
+	}
 
-    to {
-        margin-top: 10%;
-        margin-bottom: 0;
-    }
+	to {
+		margin-top: 10%;
+		margin-bottom: 0;
+	}
 }

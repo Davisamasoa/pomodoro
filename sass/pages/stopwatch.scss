@@ -1,72 +1,72 @@
 .stopWatch-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 250px;
-    position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 250px;
+	position: relative;
 }
 
 .stopWatch-content {
-    img {
-        width: 100px;
-    }
+	img {
+		width: 100px;
+	}
 
-    .h1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        margin-top: 10%;
-        margin-bottom: 0;
-    }
+	.h1 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+		margin-top: 10%;
+		margin-bottom: 0;
+	}
 
-    h1 {
-        font-size: 150px;
-        font-weight: 200;
-        width: 670px;
-        margin-left: 50px;
-    }
+	h1 {
+		font-size: 150px;
+		font-weight: 200;
+		width: 670px;
+		margin-left: 50px;
+	}
 
-    button img {
-        width: 40px;
-        height: 40px;
-    }
+	button img {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .buttonCron {
-    display: flex;
-    gap: 50px;
-    position: fixed;
-    bottom: 30px;
+	display: flex;
+	gap: 50px;
+	position: fixed;
+	bottom: 30px;
 }
 
 .buttonCron {
-    button {
-        background-color: rgba(111, 151, 211, 0.3);
-        border-radius: 100%;
-        width: 75px;
-        height: 75px;
-    }
+	button {
+		background-color: rgba(111, 151, 211, 0.3);
+		border-radius: 100%;
+		width: 75px;
+		height: 75px;
+	}
 }
 
 .timeFlag {
-    width: 510px;
-    font-size: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -400px;
-    left: -40px;
+	width: 510px;
+	font-size: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -400px;
+	left: -40px;
 }
 
 .timeFlag {
-    p {
-        text-align: start;
-        font-weight: 200;
-        font-size: 30px;
-    }
+	p {
+		text-align: start;
+		font-weight: 200;
+		font-size: 30px;
+	}
 }

@@ -16,17 +16,16 @@ let cronButtonSquare = document.querySelector(".square");
 let timeFlag = document.querySelector(".timeFlag");
 let startCounting;
 
-
-	//BUTTONS EVENT LISTENNERS
+//BUTTONS EVENT LISTENNERS
 
 btnAlarme.addEventListener("click", () => {
 	sectionAlarme.style.display = "flex";
 	sectionStopWatch.style.display = "none";
-	sectionTimeZone.style.display = "none";;
+	sectionTimeZone.style.display = "none";
 	sectionTimer.style.display = "none";
 	setTimeout(() => {
-		h1CronDiv.style.animation = "none"	
-	}, 500)
+		h1CronDiv.style.animation = "none";
+	}, 500);
 	sectionAnimation();
 });
 
@@ -36,8 +35,8 @@ btnStopWatch.addEventListener("click", () => {
 	sectionTimeZone.style.display = "none";
 	sectionStopWatch.style.display = "flex";
 	setTimeout(() => {
-		h1CronDiv.style.animation = "none"	
-	}, 500)
+		h1CronDiv.style.animation = "none";
+	}, 500);
 	sectionAnimation();
 });
 
@@ -47,8 +46,8 @@ btnTimer.addEventListener("click", () => {
 	sectionTimeZone.style.display = "none";
 	sectionTimer.style.display = "flex";
 	setTimeout(() => {
-		h1CronDiv.style.animation = "none"	
-	}, 500)
+		h1CronDiv.style.animation = "none";
+	}, 500);
 	sectionAnimation();
 });
 
@@ -58,12 +57,10 @@ btnTimeZone.addEventListener("click", () => {
 	sectionTimer.style.display = "none";
 	sectionTimeZone.style.display = "flex";
 	setTimeout(() => {
-		h1CronDiv.style.animation = "none"	
-	}, 500)
+		h1CronDiv.style.animation = "none";
+	}, 500);
 	sectionAnimation();
 });
-
-
 
 cronButtonPlay.addEventListener("click", () => {
 	startCounting = setInterval(coutingStopWatch, tempo);
@@ -97,27 +94,26 @@ cronButtonFlagQuit.addEventListener("click", () => {
 	buttonAnimation("buttonAnimation 0.3s ease-out");
 });
 
-
 cronButtonSquare.addEventListener("click", () => {
 	cronButtonSquare.style.display = "none";
 	cronButtonPlay.style.animation = "none";
 	if (h1CronDiv.style.marginBottom == "8%") {
 		h1CronDiv.style.animation = "h1-stopWatchDown 0.2s linear";
 		setTimeout(() => {
-			h1CronDiv.style.animation = "none";	
-		}, 500)
+			h1CronDiv.style.animation = "none";
+		}, 500);
 	}
-	
+
 	setTimeout(() => {
 		h1Cron.style.animation = "none";
 	}, 500);
-	
+
 	h1CronDiv.style.marginBottom = "0";
 	h1CronDiv.style.marginTop = "10%";
 	timeFlag.innerHTML = "";
 	timeFlag.style.display = "none";
 	countStopTimes = 0;
-	h1Cron.textContent = "00:00.00"
+	h1Cron.textContent = "00:00.00";
 	milesium = 0;
 	seconds = 0;
 	minutes = 0;
@@ -125,8 +121,6 @@ cronButtonSquare.addEventListener("click", () => {
 	clearInterval(startCounting);
 	buttonAnimation("buttonAnimation 0.3s ease-out");
 });
-
-
 
 //STOPWATCH FUNCTIONS
 let tempo = 10;
@@ -136,25 +130,23 @@ let seconds = 0;
 let minutes = 0;
 function coutingStopWatch() {
 	milesium++;
-	
-	
+
 	if (milesium == 100) {
 		milesium = 00;
 		seconds++;
 	}
-	
+
 	if (milesium < 10) {
 		milesium = "0" + Number(milesium);
 	} else {
 		milesium = Number(milesium);
 	}
-	
-	
+
 	if (seconds == 60) {
 		minutes++;
 		seconds = 0;
 	}
-	
+
 	if (seconds < 10) {
 		seconds = "0" + Number(seconds);
 	} else {
@@ -166,12 +158,10 @@ function coutingStopWatch() {
 	} else {
 		minutes = Number(minutes);
 	}
-	
+
 	h1Cron.textContent = `${minutes}:${seconds}.${milesium}`;
-  }
+}
 
-
-  
 //BUTTON ANIMATION FUNCTIONS
 function buttonAnimation(animation) {
 	cronButtonPlay.style.animation = animation;
