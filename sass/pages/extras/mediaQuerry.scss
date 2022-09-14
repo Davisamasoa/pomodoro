@@ -25,6 +25,12 @@
             font-size: 50px;
         }
     }
+
+    .timeFlag {
+        left: -30px;
+        top: -370px;
+    }
+
 }
 
 
@@ -97,6 +103,11 @@
 
     }
 
+    .timeFlag {
+        left: 0px;
+        top: -380px;
+    }
+
     .timeFlag p {
         font-size: 22px;
     }
@@ -130,10 +141,14 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .timeFlag {
-        top: 50px;
+        top: -350px;
     }
+}
+
+@media (max-width: 1000px) {
+
 
     .timeFlag p {
         font-size: 22px;
@@ -199,6 +214,10 @@
         article p {
             font-size: 50px;
         }
+    }
+
+    .timeFlag {
+        top: -330px;
     }
 }
 
@@ -277,7 +296,7 @@
     }
 
     .timeFlag {
-        top: 50px;
+        top: -350px;
         width: 100%;
         left: 25px;
     }
@@ -378,7 +397,7 @@
     }
 
     .timeFlag {
-        top: 40px;
+        top: -340px;
         width: 100%;
         left: -30px;
     }
@@ -393,5 +412,4 @@
     .timeFlag {
         left: -50px;
     }
-
 }

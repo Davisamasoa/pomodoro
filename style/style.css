@@ -290,11 +290,12 @@ body.dark {
 .timeFlag {
   width: 510px;
   font-size: 45px;
-  margin-top: -380px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  top: -400px;
+  left: -40px;
 }
 
 .timeFlag p {
@@ -394,6 +395,10 @@ body.dark {
   .world-time article p {
     font-size: 50px;
   }
+  .timeFlag {
+    left: -30px;
+    top: -370px;
+  }
 }
 @media (max-width: 1380px) {
   /* NAVBAR */
@@ -446,6 +451,10 @@ body.dark {
     width: 534px;
     margin-left: 0;
   }
+  .timeFlag {
+    left: 0px;
+    top: -380px;
+  }
   .timeFlag p {
     font-size: 22px;
   }
@@ -471,10 +480,12 @@ body.dark {
     font-size: 40px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .timeFlag {
-    top: 50px;
+    top: -350px;
   }
+}
+@media (max-width: 1000px) {
   .timeFlag p {
     font-size: 22px;
     margin-left: 0px;
@@ -523,6 +534,9 @@ body.dark {
   }
   .world-time article p {
     font-size: 50px;
+  }
+  .timeFlag {
+    top: -330px;
   }
 }
 @media (max-width: 550px) {
@@ -581,7 +595,7 @@ body.dark {
     height: 70px;
   }
   .timeFlag {
-    top: 50px;
+    top: -350px;
     width: 100%;
     left: 25px;
   }
@@ -661,7 +675,7 @@ body.dark {
     left: 80px;
   }
   .timeFlag {
-    top: 40px;
+    top: -340px;
     width: 100%;
     left: -30px;
   }
