@@ -1,0 +1,89 @@
+.pomodoro-content {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.circleOut {
+    width: 600px;
+    height: 700px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circleOut {
+    span {
+        position: absolute;
+        top: 90px;
+        font-weight: 0;
+        font-size: 40px;
+    }
+
+    p {
+        position: absolute;
+        font-size: 150px;
+        width: 450px;
+        left: 122px;
+
+    }
+}
+
+.circleAnimation {
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.circleIn {
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    z-index: 0;
+}
+
+.pomodoroButton {
+    position: absolute;
+    top: 450px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    z-index: 5;
+}
+
+.pomodoroButton {
+    button {
+        width: 80px;
+        height: 80px;
+        background-color: rgba(111, 151, 211, 0.3);
+        border-radius: 100%;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+.nextTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.nextTime {
+    img {
+        width: 28px;
+    }
+}

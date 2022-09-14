@@ -1,0 +1,28 @@
+.world-time {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.world-time {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 150px;
+    }
+
+    article {
+        margin-top: 80px;
+        width: 600px;
+    }
+
+    article h3 {
+        font-size: 50px;
+    }
+
+    article p {
+        font-size: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

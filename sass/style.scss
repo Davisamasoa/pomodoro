@@ -1,0 +1,137 @@
+@font-face {
+    font-family: LouisGeorge;
+    src: url(../font/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: LouisGeorge;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    background-color: #0d122e;
+    color: white;
+    transition: background 0.2s linear;
+}
+
+/*Dark Mode*/
+
+body.dark {
+    background-color: #f7e0a2;
+    color: black;
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: rgba(111, 151, 211, 0.3);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    right: -220px;
+    height: 26px;
+    top: 15px;
+    width: 50px;
+    transform: scale(1.5);
+
+}
+
+.label {
+    .moon {
+        width: 15px;
+    }
+
+    .sun {
+        width: 17px;
+    }
+
+    .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+}
+
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+
+
+/* NAVBAR*/
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+
+.navbar {
+    button {
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    img {
+        width: 50px;
+        border-radius: 100%;
+        transition: 0.3s;
+    }
+
+    ul {
+        width: 660px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.darkToggle {
+    position: absolute;
+    right: 350px;
+}
+
+@import "./pages/extras/animations.scss";
+@import "./pages/pomodoro.scss";
+@import "./pages/stopwatch.scss";
+@import "./pages/timer.scss";
+@import "./pages/timerZone.scss";
+@import "./pages/extras/mediaQuerry.scss";

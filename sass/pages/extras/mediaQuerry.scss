@@ -1,0 +1,397 @@
+@media (min-width: 700px) {
+    .navbar ul img:hover {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .world-time div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 150px;
+    }
+
+    .world-time {
+        article {
+            margin-top: 80px;
+            width: 600px;
+        }
+
+        article h3 {
+            font-size: 40px;
+        }
+
+        article p {
+            font-size: 50px;
+        }
+    }
+}
+
+
+@media (max-width: 1380px) {
+
+    /* NAVBAR */
+    body {
+        overflow-y: hidden;
+    }
+
+    .darkToggle {
+        right: 320px;
+    }
+
+    .navbar {
+        ul {
+            width: 500px;
+        }
+
+        button {
+            width: 40px;
+        }
+    }
+
+    /* POMODORO */
+    .pomodoro-content {
+        margin-top: 20px;
+        height: 550px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .circleOut {
+        width: 370px;
+        height: 370px;
+    }
+
+    .circleOut p {
+        font-size: 100px;
+        width: 235px;
+        left: 65px;
+    }
+
+    .pomodoroButton {
+        top: 260px;
+    }
+
+    section {
+        button {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        button img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+
+    /* STOPWATCH */
+    .h1 {
+        margin-top: 8%;
+    }
+
+    .stopWatch-content h1 {
+        font-size: 120px;
+        width: 534px;
+        margin-left: 0;
+
+    }
+
+    .timeFlag p {
+        font-size: 22px;
+    }
+
+    /* TIMER */
+    .timer-content {
+        input {
+            font-size: 120px;
+            width: 170px;
+            margin-bottom: 50px;
+        }
+
+        span {
+            font-size: 120px;
+        }
+    }
+
+    /* GLOBAL TIME */
+    .world-time article {
+        margin-top: 80px;
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .world-time article h3 {
+        font-size: 30px;
+    }
+
+    .world-time article p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .timeFlag {
+        top: 50px;
+    }
+
+    .timeFlag p {
+        font-size: 22px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .darkToggle {
+        right: 395px;
+        top: 87px;
+    }
+
+    /* GLOBAL TIME*/
+    .world-time {
+        div {
+            grid-template-columns: 1fr 1fr;
+            margin-left: 00px;
+            margin-top: 50px;
+        }
+
+        article {
+            margin-top: 40px;
+            width: 300px;
+        }
+
+        article h3 {
+            font-size: 30px;
+        }
+
+        article p {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    body {
+        overflow-y: unset;
+    }
+
+    .darkToggle {
+        right: 290px;
+        top: 87px;
+    }
+
+    .world-time {
+        div {
+            grid-template-columns: 1fr;
+            margin-left: 120px;
+        }
+
+        article {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            width: 600px;
+        }
+
+        article h3 {
+            font-size:
+                30px;
+        }
+
+        article p {
+            font-size: 50px;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    /* NAVBAR */
+    body {
+        overflow-y: hidden;
+    }
+
+    .darkToggle {
+        right: 275px;
+        top: 87px;
+    }
+
+    .navbar {
+        ul {
+            width: 310px;
+        }
+
+        button {
+            width: 40px;
+        }
+    }
+
+    /* POMODORO */
+    .pomodoro-content {
+        margin-top: 0px;
+        height: 550px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circleOut {
+        width: 370px;
+        height: 370px;
+    }
+
+    .circleOut p {
+        font-size: 80px;
+        width: 235px;
+        left: 90px;
+    }
+
+    .pomodoroButton {
+        top: 260px;
+    }
+
+    section {
+        button {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        button img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+
+    /* STOPWATCH */
+    .stopWatch-content {
+        margin-top: 40px;
+    }
+
+    .stopWatch-content h1 {
+        font-size: 70px;
+        width: 310px;
+        margin-left: 0;
+    }
+
+    .h1 {
+        height: 70px;
+    }
+
+    .timeFlag {
+        top: 50px;
+        width: 100%;
+        left: 25px;
+    }
+
+    .timeFlag p {
+        font-size: 22px;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .buttonCron {
+        position: fixed;
+        bottom: 0;
+        height: 70px;
+        top: 690px;
+    }
+
+    /* TIMER */
+    .timer-content {
+        flex-wrap: nowrap;
+    }
+
+    .timer-content {
+        input {
+            font-size: 70px;
+            width: 90px;
+            margin-bottom: 120px;
+        }
+
+        span {
+            font-size: 70px;
+        }
+    }
+
+    .world-time div {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 530px) {
+    .timeFlag {
+        left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .timeFlag {
+        left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .timeFlag {
+        left: -5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pomodoro-content {
+        margin-top: 0px;
+        height: 550px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circleOut {
+        width: 330px;
+        height: 330px;
+    }
+
+    .circleOut span {
+        top: 60px;
+    }
+
+    .pomodoroButton {
+        top: 230px;
+    }
+
+    section {
+        button {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        button img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+
+    .circleOut p {
+        font-size: 70px;
+        width: 235px;
+        left: 80px;
+    }
+
+    .timeFlag {
+        top: 40px;
+        width: 100%;
+        left: -30px;
+    }
+
+    .timeFlag p {
+        font-size: 22px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .timeFlag {
+        left: -50px;
+    }
+
+}
