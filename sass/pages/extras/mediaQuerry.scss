@@ -5,13 +5,13 @@
 }
 
 @media (max-width: 1550px) {
-	.world-time div {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin-left: 150px;
-	}
-
 	.world-time {
+		div {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			margin-left: 150px;
+		}
+
 		article {
 			margin-top: 80px;
 			width: 600px;
@@ -100,12 +100,14 @@
 	}
 
 	.timeFlag {
-		left: 0px;
-		top: -380px;
-	}
+		& {
+			left: 0px;
+			top: -380px;
+		}
 
-	.timeFlag p {
-		font-size: 22px;
+		p {
+			font-size: 22px;
+		}
 	}
 
 	/* TIMER */
@@ -122,18 +124,20 @@
 	}
 
 	/* GLOBAL TIME */
-	.world-time article {
-		margin-top: 80px;
-		width: 500px;
-		margin-left: 0;
-	}
+	.world-time {
+		article {
+			margin-top: 80px;
+			width: 500px;
+			margin-left: 0;
+		}
 
-	.world-time article h3 {
-		font-size: 30px;
-	}
+		article h3 {
+			font-size: 30px;
+		}
 
-	.world-time article p {
-		font-size: 40px;
+		article p {
+			font-size: 40px;
+		}
 	}
 }
 
@@ -245,14 +249,16 @@
 	}
 
 	.circleOut {
-		width: 370px;
-		height: 370px;
-	}
+		& {
+			width: 370px;
+			height: 370px;
+		}
 
-	.circleOut p {
-		font-size: 80px;
-		width: 235px;
-		left: 90px;
+		p {
+			font-size: 80px;
+			width: 235px;
+			left: 90px;
+		}
 	}
 
 	.pomodoroButton {
@@ -273,13 +279,15 @@
 
 	/* STOPWATCH */
 	.stopWatch-content {
-		margin-top: 40px;
-	}
+		& {
+			margin-top: 40px;
+		}
 
-	.stopWatch-content h1 {
-		font-size: 70px;
-		width: 310px;
-		margin-left: 0;
+		h1 {
+			font-size: 70px;
+			width: 310px;
+			margin-left: 0;
+		}
 	}
 
 	.h1 {
@@ -287,15 +295,17 @@
 	}
 
 	.timeFlag {
-		top: -350px;
-		width: 100%;
-		left: 25px;
-	}
+		& {
+			top: -350px;
+			width: 100%;
+			left: 25px;
+		}
 
-	.timeFlag p {
-		font-size: 22px;
-		margin-left: 100px;
-		width: 100%;
+		p {
+			font-size: 22px;
+			margin-left: 100px;
+			width: 100%;
+		}
 	}
 
 	.buttonCron {
@@ -306,11 +316,12 @@
 	}
 
 	/* TIMER */
-	.timer-content {
-		flex-wrap: nowrap;
-	}
 
 	.timer-content {
+		& {
+			flex-wrap: nowrap;
+		}
+
 		input {
 			font-size: 70px;
 			width: 90px;
@@ -357,12 +368,20 @@
 	}
 
 	.circleOut {
-		width: 330px;
-		height: 330px;
-	}
+		& {
+			width: 330px;
+			height: 330px;
+		}
 
-	.circleOut span {
-		top: 60px;
+		span {
+			top: 60px;
+		}
+
+		p {
+			font-size: 70px;
+			width: 235px;
+			left: 80px;
+		}
 	}
 
 	.pomodoroButton {
@@ -381,21 +400,17 @@
 		}
 	}
 
-	.circleOut p {
-		font-size: 70px;
-		width: 235px;
-		left: 80px;
-	}
-
 	.timeFlag {
-		top: -340px;
-		width: 100%;
-		left: -30px;
-	}
+		& {
+			top: -340px;
+			width: 100%;
+			left: -30px;
+		}
 
-	.timeFlag p {
-		font-size: 22px;
-		width: 100%;
+		p {
+			font-size: 22px;
+			width: 100%;
+		}
 	}
 }
 

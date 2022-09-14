@@ -1,14 +1,14 @@
 .stopWatch-content {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 250px;
-	position: relative;
-}
+	& {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 250px;
+		position: relative;
+	}
 
-.stopWatch-content {
 	img {
 		width: 100px;
 	}
@@ -37,13 +37,13 @@
 }
 
 .buttonCron {
-	display: flex;
-	gap: 50px;
-	position: fixed;
-	bottom: 30px;
-}
+	& {
+		display: flex;
+		gap: 50px;
+		position: fixed;
+		bottom: 30px;
+	}
 
-.buttonCron {
 	button {
 		background-color: rgba(111, 151, 211, 0.3);
 		border-radius: 100%;
@@ -53,17 +53,17 @@
 }
 
 .timeFlag {
-	width: 510px;
-	font-size: 45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: -400px;
-	left: -40px;
-}
+	& {
+		width: 510px;
+		font-size: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: -400px;
+		left: -40px;
+	}
 
-.timeFlag {
 	p {
 		text-align: start;
 		font-weight: 200;

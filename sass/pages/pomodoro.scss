@@ -9,16 +9,16 @@
 }
 
 .circleOut {
-	width: 600px;
-	height: 700px;
-	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
+	& {
+		width: 600px;
+		height: 700px;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
 
-.circleOut {
 	span {
 		position: absolute;
 		top: 90px;
@@ -53,15 +53,15 @@
 }
 
 .pomodoroButton {
-	position: absolute;
-	top: 450px;
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	z-index: 5;
-}
+	& {
+		position: absolute;
+		top: 450px;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		z-index: 5;
+	}
 
-.pomodoroButton {
 	button {
 		width: 80px;
 		height: 80px;
@@ -75,13 +75,13 @@
 }
 
 .nextTime {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	display: none;
-}
+	& {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
 
-.nextTime {
 	img {
 		width: 28px;
 	}

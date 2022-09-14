@@ -1,11 +1,11 @@
 .world-time {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-}
+	& {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
 
-.world-time {
 	div {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
