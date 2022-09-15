@@ -44,7 +44,7 @@ chk.addEventListener("change", (e) => {
 function changeIcon() {
 	if (bodyTag.classList == "dark") {
 		//NAV ICONS
-		iconClock.src = "./assets/icons/relogioPRETO.svg";
+		iconClock.src = "./assets/icons/pomoPRETO.svg";
 		iconStopWatch.src = "./assets/icons/cronometroPRETO.svg";
 		iconTimer.src = "./assets/icons/ampulhetaPRETO.svg";
 		iconGlobo.src = "./assets/icons/globoPRETO.svg";
@@ -87,7 +87,7 @@ function changeIcon() {
 		resetTimerbtn.src = "./assets/icons/quadradoPRETO.svg";
 	} else {
 		//NAV ICONS
-		iconClock.src = "./assets/icons/relogioBRANCO.svg";
+		iconClock.src = "./assets/icons/pomoBRANCO.svg";
 		iconStopWatch.src = "./assets/icons/cronometroBRANCO.svg";
 		iconTimer.src = "./assets/icons/ampulhetaBRANCO.svg";
 		iconGlobo.src = "./assets/icons/globoBRANCO.svg";
