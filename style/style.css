@@ -1,694 +1,684 @@
 @font-face {
-	font-family: LouisGeorge;
-	src: url(../font/louis_george_caf/Louis\ George\ Cafe.ttf);
+  font-family: LouisGeorge;
+  src: url(../font/louis_george_caf/Louis\ George\ Cafe.ttf);
 }
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	list-style: none;
-	border: none;
-	font-family: LouisGeorge;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  font-family: LouisGeorge;
 }
 
 button {
-	background-color: transparent;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-	height: 100vh;
-	background-color: #0d122e;
-	color: white;
-	transition: background 0.2s linear;
+  height: 100vh;
+  background-color: #0d122e;
+  color: white;
+  transition: background 0.2s linear;
 }
 
 /*Dark Mode*/
 body.dark {
-	background-color: #f7e0a2;
-	color: black;
+  background-color: #f7e0a2;
+  color: black;
 }
 
 .checkbox {
-	opacity: 0;
-	position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 
 .label {
-	background-color: rgba(111, 151, 211, 0.3);
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px;
-	position: relative;
-	right: -220px;
-	height: 26px;
-	top: 15px;
-	width: 50px;
-	transform: scale(1.5);
+  background-color: rgba(111, 151, 211, 0.3);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  right: -220px;
+  height: 26px;
+  top: 15px;
+  width: 50px;
+  transform: scale(1.5);
 }
 
 .label .moon {
-	width: 15px;
+  width: 15px;
 }
 .label .sun {
-	width: 17px;
+  width: 17px;
 }
 .label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .label .ball {
-	transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 /* NAVBAR*/
 .navbar {
-	width: 100%;
-	height: 15vh;
-	display: flex;
-	justify-content: center;
-	padding-top: 30px;
-	position: relative;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  position: relative;
 }
 
 .navbar button {
-	background-color: transparent;
-	cursor: pointer;
-	border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 100%;
 }
 .navbar img {
-	width: 50px;
-	border-radius: 100%;
-	transition: 0.3s;
+  width: 50px;
+  border-radius: 100%;
+  transition: 0.3s;
 }
 .navbar ul {
-	width: 660px;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
+  width: 660px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .darkToggle {
-	position: absolute;
-	right: 350px;
+  position: absolute;
+  right: 350px;
 }
 
 @keyframes circleAnimation {
-	0% {
-		width: 95%;
-		height: 95%;
-		opacity: 1;
-	}
-	100% {
-		width: 102%;
-		height: 102%;
-		opacity: 0;
-	}
+  0% {
+    width: 95%;
+    height: 95%;
+    opacity: 1;
+  }
+  100% {
+    width: 102%;
+    height: 102%;
+    opacity: 0;
+  }
 }
 @keyframes sectionAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes buttonAnimation {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes h1-stopWatchUp {
-	from {
-		margin-top: 8%;
-		margin-bottom: 0;
-	}
-	to {
-		margin-top: 0;
-		margin-bottom: 8%;
-	}
+  from {
+    margin-top: 8%;
+    margin-bottom: 0;
+  }
+  to {
+    margin-top: 0;
+    margin-bottom: 8%;
+  }
 }
 @keyframes h1-stopWatchDown {
-	from {
-		margin-top: 0;
-		margin-bottom: 8%;
-	}
-	to {
-		margin-top: 10%;
-		margin-bottom: 0;
-	}
+  from {
+    margin-top: 0;
+    margin-bottom: 8%;
+  }
+  to {
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
 }
 .pomodoro-content {
-	height: 600px;
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 50px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .circleOut {
-	width: 600px;
-	height: 700px;
-	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+  width: 600px;
+  height: 700px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
 .circleOut span {
-	position: absolute;
-	top: 90px;
-	font-weight: 0;
-	font-size: 40px;
+  position: absolute;
+  top: 90px;
+  font-weight: 0;
+  font-size: 40px;
 }
 .circleOut p {
-	position: absolute;
-	font-size: 150px;
-	width: 450px;
-	left: 122px;
+  position: absolute;
+  font-size: 150px;
+  width: 450px;
+  left: 122px;
 }
 
 .circleAnimation {
-	position: absolute;
-	border: 1px solid rgb(255, 255, 255);
-	width: 95%;
-	height: 95%;
-	border-radius: 100%;
-	z-index: 5;
-	transition: 0.5s;
+  position: absolute;
+  border: 2px solid rgb(255, 255, 255);
+  width: 95%;
+  height: 95%;
+  border-radius: 100%;
+  z-index: 5;
+  transition: 0.5s;
 }
 
 .circleIn {
-	border: 1px solid rgb(255, 255, 255);
-	width: 95%;
-	height: 95%;
-	border-radius: 100%;
-	z-index: 0;
+  border: 3px solid rgb(255, 255, 255);
+  width: 95%;
+  height: 95%;
+  border-radius: 100%;
+  z-index: 0;
 }
 
 .pomodoroButton {
-	position: absolute;
-	top: 450px;
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	z-index: 5;
+  position: absolute;
+  top: 450px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  z-index: 5;
 }
-
 .pomodoroButton button {
-	width: 80px;
-	height: 80px;
-	background-color: rgba(111, 151, 211, 0.3);
-	border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(111, 151, 211, 0.3);
+  border-radius: 100%;
 }
 .pomodoroButton img {
-	width: 40px;
+  width: 40px;
 }
 
 .nextTime {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
-
 .nextTime img {
-	width: 28px;
+  width: 28px;
 }
 
 .stopWatch-content {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 250px;
-	position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 250px;
+  position: relative;
 }
-
 .stopWatch-content img {
-	width: 100px;
+  width: 100px;
 }
 .stopWatch-content .h1 {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 200px;
-	margin-top: 10%;
-	margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 10%;
+  margin-bottom: 0;
 }
 .stopWatch-content h1 {
-	font-size: 150px;
-	font-weight: 200;
-	width: 670px;
-	margin-left: 50px;
+  font-size: 150px;
+  font-weight: 200;
+  width: 670px;
+  margin-left: 50px;
 }
 .stopWatch-content button img {
-	width: 40px;
-	height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .buttonCron {
-	display: flex;
-	gap: 50px;
-	position: fixed;
-	bottom: 30px;
+  display: flex;
+  gap: 50px;
+  position: fixed;
+  bottom: 30px;
 }
-
 .buttonCron button {
-	background-color: rgba(111, 151, 211, 0.3);
-	border-radius: 100%;
-	width: 75px;
-	height: 75px;
+  background-color: rgba(111, 151, 211, 0.3);
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
 }
 
 .timeFlag {
-	width: 510px;
-	font-size: 45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: -400px;
-	left: -40px;
+  width: 510px;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -400px;
+  left: -40px;
 }
-
 .timeFlag p {
-	text-align: start;
-	font-weight: 200;
-	font-size: 30px;
+  text-align: start;
+  font-weight: 200;
+  font-size: 30px;
 }
 
 .timer-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 70vh;
-	flex-direction: column;
-	flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-
 .timer-content input {
-	font-size: 150px;
-	background-color: transparent;
-	color: white;
-	border-radius: 20px;
-	width: 250px;
-	text-align: center;
-	margin-bottom: 150px;
+  font-size: 150px;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 .timer-content span {
-	text-align: center;
-	font-size: 150px;
-	margin-right: 5px;
+  text-align: center;
+  font-size: 150px;
+  margin-right: 5px;
 }
 
 .div-timer {
-	position: relative;
+  position: relative;
 }
 
 .timer-buttons {
-	display: flex;
-	gap: 50px;
-	position: fixed;
-	bottom: 30px;
+  display: flex;
+  gap: 50px;
+  position: fixed;
+  bottom: 30px;
 }
-
 .timer-buttons button {
-	background-color: rgba(111, 151, 211, 0.3);
-	border-radius: 100%;
-	width: 75px;
-	height: 75px;
+  background-color: rgba(111, 151, 211, 0.3);
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
 }
 .timer-buttons img {
-	width: 40px;
-	height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .world-time {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
 .world-time div {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin-left: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 150px;
 }
 .world-time article {
-	margin-top: 80px;
-	width: 600px;
+  margin-top: 80px;
+  width: 600px;
 }
 .world-time article h3 {
-	font-size: 50px;
+  font-size: 50px;
 }
 .world-time article p {
-	font-size: 60px;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media (min-width: 700px) {
-	.navbar ul img:hover {
-		width: 60px;
-	}
+  .navbar ul img:hover {
+    width: 60px;
+  }
 }
 @media (max-width: 1550px) {
-	.world-time div {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin-left: 150px;
-	}
-	.world-time article {
-		margin-top: 80px;
-		width: 600px;
-	}
-	.world-time article h3 {
-		font-size: 40px;
-	}
-	.world-time article p {
-		font-size: 50px;
-	}
-	.timeFlag {
-		left: -30px;
-		top: -370px;
-	}
+  .world-time div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 150px;
+  }
+  .world-time article {
+    margin-top: 80px;
+    width: 600px;
+  }
+  .world-time article h3 {
+    font-size: 40px;
+  }
+  .world-time article p {
+    font-size: 50px;
+  }
+  .timeFlag {
+    left: -30px;
+    top: -370px;
+  }
 }
 @media (max-width: 1380px) {
-	/* NAVBAR */
-	body {
-		overflow-y: hidden;
-	}
-	.darkToggle {
-		right: 320px;
-	}
-	.navbar ul {
-		width: 500px;
-	}
-	.navbar button {
-		width: 40px;
-	}
-	/* POMODORO */
-	.pomodoro-content {
-		margin-top: 20px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-	}
-	.circleOut {
-		width: 370px;
-		height: 370px;
-	}
-	.circleOut p {
-		font-size: 100px;
-		width: 235px;
-		left: 65px;
-	}
-	.pomodoroButton {
-		top: 260px;
-	}
-	section button {
-		width: 60px !important;
-		height: 60px !important;
-	}
-	section button img {
-		width: 30px !important;
-		height: 30px !important;
-	}
-	/* STOPWATCH */
-	.h1 {
-		margin-top: 8%;
-	}
-	.stopWatch-content h1 {
-		font-size: 120px;
-		width: 534px;
-		margin-left: 0;
-	}
-	.timeFlag {
-		left: 0px;
-		top: -380px;
-	}
-	.timeFlag p {
-		font-size: 22px;
-	}
-	/* TIMER */
-	.timer-content input {
-		font-size: 120px;
-		width: 170px;
-		margin-bottom: 50px;
-	}
-	.timer-content span {
-		font-size: 120px;
-	}
-	/* GLOBAL TIME */
-	.world-time article {
-		margin-top: 80px;
-		width: 500px;
-		margin-left: 0;
-	}
-	.world-time article h3 {
-		font-size: 30px;
-	}
-	.world-time article p {
-		font-size: 40px;
-	}
+  /* NAVBAR */
+  body {
+    overflow-y: hidden;
+  }
+  .darkToggle {
+    right: 320px;
+  }
+  .navbar ul {
+    width: 500px;
+  }
+  .navbar button {
+    width: 40px;
+  }
+  /* POMODORO */
+  .pomodoro-content {
+    margin-top: 20px;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .circleOut {
+    width: 370px;
+    height: 370px;
+  }
+  .circleOut p {
+    font-size: 100px;
+    width: 235px;
+    left: 65px;
+  }
+  .pomodoroButton {
+    top: 260px;
+  }
+  section button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  section button img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  /* STOPWATCH */
+  .h1 {
+    margin-top: 8%;
+  }
+  .stopWatch-content h1 {
+    font-size: 120px;
+    width: 534px;
+    margin-left: 0;
+  }
+  .timeFlag {
+    left: 0px;
+    top: -380px;
+  }
+  .timeFlag p {
+    font-size: 22px;
+  }
+  /* TIMER */
+  .timer-content input {
+    font-size: 120px;
+    width: 170px;
+    margin-bottom: 50px;
+  }
+  .timer-content span {
+    font-size: 120px;
+  }
+  /* GLOBAL TIME */
+  .world-time article {
+    margin-top: 80px;
+    width: 500px;
+    margin-left: 0;
+  }
+  .world-time article h3 {
+    font-size: 30px;
+  }
+  .world-time article p {
+    font-size: 40px;
+  }
 }
 @media (max-width: 1200px) {
-	.timeFlag {
-		top: -350px;
-	}
+  .timeFlag {
+    top: -350px;
+  }
 }
 @media (max-width: 1000px) {
-	.timeFlag p {
-		font-size: 22px;
-		margin-left: 0px;
-		width: 100%;
-	}
-	.darkToggle {
-		right: 395px;
-		top: 87px;
-	}
-	/* GLOBAL TIME*/
-	.world-time div {
-		grid-template-columns: 1fr 1fr;
-		margin-left: 0px;
-		margin-top: 50px;
-	}
-	.world-time article {
-		margin-top: 40px;
-		width: 300px;
-	}
-	.world-time article h3 {
-		font-size: 30px;
-	}
-	.world-time article p {
-		font-size: 30px;
-	}
+  .timeFlag p {
+    font-size: 22px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .darkToggle {
+    right: 395px;
+    top: 87px;
+  }
+  /* GLOBAL TIME*/
+  .world-time div {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .world-time article {
+    margin-top: 40px;
+    width: 300px;
+  }
+  .world-time article h3 {
+    font-size: 30px;
+  }
+  .world-time article p {
+    font-size: 30px;
+  }
 }
 @media (max-width: 670px) {
-	body {
-		overflow-y: unset;
-	}
-	.darkToggle {
-		right: 290px;
-		top: 87px;
-	}
-	.world-time div {
-		grid-template-columns: 1fr;
-		margin-left: 120px;
-	}
-	.world-time article {
-		margin-top: 0px;
-		margin-bottom: 50px;
-		width: 600px;
-	}
-	.world-time article h3 {
-		font-size: 30px;
-	}
-	.world-time article p {
-		font-size: 50px;
-	}
-	.timeFlag {
-		top: -330px;
-	}
+  body {
+    overflow-y: unset;
+  }
+  .darkToggle {
+    right: 290px;
+    top: 87px;
+  }
+  .world-time div {
+    grid-template-columns: 1fr;
+    margin-left: 120px;
+  }
+  .world-time article {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+  .world-time article h3 {
+    font-size: 30px;
+  }
+  .world-time article p {
+    font-size: 50px;
+  }
+  .timeFlag {
+    top: -330px;
+  }
 }
 @media (max-width: 550px) {
-	/* NAVBAR */
-	body {
-		overflow-y: hidden;
-	}
-	.darkToggle {
-		right: 275px;
-		top: 87px;
-	}
-	.navbar ul {
-		width: 310px;
-	}
-	.navbar button {
-		width: 40px;
-	}
-	/* POMODORO */
-	.pomodoro-content {
-		margin-top: 0px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	.circleOut {
-		width: 370px;
-		height: 370px;
-	}
-	.circleOut p {
-		font-size: 80px;
-		width: 235px;
-		left: 90px;
-	}
-	.pomodoroButton {
-		top: 260px;
-	}
-	section button {
-		width: 60px !important;
-		height: 60px !important;
-	}
-	section button img {
-		width: 30px !important;
-		height: 30px !important;
-	}
-	/* STOPWATCH */
-	.stopWatch-content {
-		margin-top: 40px;
-	}
-	.stopWatch-content h1 {
-		font-size: 70px;
-		width: 310px;
-		margin-left: 0;
-	}
-	.h1 {
-		height: 70px;
-	}
-	.timeFlag {
-		top: -350px;
-		width: 100%;
-		left: 25px;
-	}
-	.timeFlag p {
-		font-size: 22px;
-		margin-left: 100px;
-		width: 100%;
-	}
-	.buttonCron {
-		position: fixed;
-		bottom: 0;
-		height: 70px;
-		top: 690px;
-	}
-	/* TIMER */
-	.timer-content {
-		flex-wrap: nowrap;
-	}
-	.timer-content input {
-		font-size: 70px;
-		width: 90px;
-		margin-bottom: 120px;
-	}
-	.timer-content span {
-		font-size: 70px;
-	}
-	.world-time div {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin-left: 250px;
-	}
+  /* NAVBAR */
+  body {
+    overflow-y: hidden;
+  }
+  .darkToggle {
+    right: 275px;
+    top: 87px;
+  }
+  .navbar ul {
+    width: 310px;
+  }
+  .navbar button {
+    width: 40px;
+  }
+  /* POMODORO */
+  .pomodoro-content {
+    margin-top: 0px;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .circleOut {
+    width: 370px;
+    height: 370px;
+  }
+  .circleOut p {
+    font-size: 80px;
+    width: 235px;
+    left: 90px;
+  }
+  .pomodoroButton {
+    top: 260px;
+  }
+  section button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  section button img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  /* STOPWATCH */
+  .stopWatch-content {
+    margin-top: 40px;
+  }
+  .stopWatch-content h1 {
+    font-size: 70px;
+    width: 310px;
+    margin-left: 0;
+  }
+  .h1 {
+    height: 70px;
+  }
+  .timeFlag {
+    top: -350px;
+    width: 100%;
+    left: 25px;
+  }
+  .timeFlag p {
+    font-size: 22px;
+    margin-left: 100px;
+    width: 100%;
+  }
+  .buttonCron {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    top: 690px;
+  }
+  /* TIMER */
+  .timer-content {
+    flex-wrap: nowrap;
+  }
+  .timer-content input {
+    font-size: 70px;
+    width: 90px;
+    margin-bottom: 120px;
+  }
+  .timer-content span {
+    font-size: 70px;
+  }
+  .world-time div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 250px;
+  }
 }
 @media (max-width: 530px) {
-	.timeFlag {
-		left: 20px;
-	}
+  .timeFlag {
+    left: 20px;
+  }
 }
 @media (max-width: 500px) {
-	.timeFlag {
-		left: 0px;
-	}
+  .timeFlag {
+    left: 0px;
+  }
 }
 @media (max-width: 500px) {
-	.timeFlag {
-		left: -5px;
-	}
+  .timeFlag {
+    left: -5px;
+  }
 }
 @media (max-width: 450px) {
-	.pomodoro-content {
-		margin-top: 0px;
-		height: 550px;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	.circleOut {
-		width: 330px;
-		height: 330px;
-	}
-	.circleOut span {
-		top: 60px;
-	}
-	.pomodoroButton {
-		top: 230px;
-	}
-	section button {
-		width: 60px !important;
-		height: 60px !important;
-	}
-	section button img {
-		width: 30px !important;
-		height: 30px !important;
-	}
-	.circleOut p {
-		font-size: 70px;
-		width: 235px;
-		left: 80px;
-	}
-	.timeFlag {
-		top: -340px;
-		width: 100%;
-		left: -30px;
-	}
-	.timeFlag p {
-		font-size: 22px;
-		width: 100%;
-	}
+  .pomodoro-content {
+    margin-top: 0px;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .circleOut {
+    width: 330px;
+    height: 330px;
+  }
+  .circleOut span {
+    top: 60px;
+  }
+  .circleOut p {
+    font-size: 70px;
+    width: 235px;
+    left: 80px;
+  }
+  .pomodoroButton {
+    top: 230px;
+  }
+  section button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  section button img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .timeFlag {
+    top: -340px;
+    width: 100%;
+    left: -30px;
+  }
+  .timeFlag p {
+    font-size: 22px;
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
-	.timeFlag {
-		left: -50px;
-	}
+  .timeFlag {
+    left: -50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
